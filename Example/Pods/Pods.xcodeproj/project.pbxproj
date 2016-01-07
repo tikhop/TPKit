@@ -12,10 +12,25 @@
 		2D64505EF4880760FC788635EAE67D15 /* Pods-TPKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C38D09514B994AD386D29F2E5C941F16 /* Pods-TPKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45CEF5D5593184572929C170BDA089C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB188F2E1AEF9890FA61902095C4DFA /* Foundation.framework */; };
 		470C1F9740CD5CB85D83D080FF348F9D /* Pods-TPKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E8F03E2D7AC52BD2878F22EA1BD91B /* Pods-TPKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47769A831C3F1D1400F67233 /* TPBundleResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A821C3F1D1400F67233 /* TPBundleResources.swift */; };
+		47769A841C3F1D1400F67233 /* TPBundleResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A821C3F1D1400F67233 /* TPBundleResources.swift */; };
+		47769A891C3F1EDC00F67233 /* MFMailComposeViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A861C3F1EDC00F67233 /* MFMailComposeViewController+Extensions.swift */; };
+		47769A8A1C3F1EDC00F67233 /* MFMailComposeViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A861C3F1EDC00F67233 /* MFMailComposeViewController+Extensions.swift */; };
+		47769A8B1C3F1EDC00F67233 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A871C3F1EDC00F67233 /* UIColor+Extension.swift */; };
+		47769A8C1C3F1EDC00F67233 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A871C3F1EDC00F67233 /* UIColor+Extension.swift */; };
+		47769A8D1C3F1EDC00F67233 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A881C3F1EDC00F67233 /* UIImage+Extension.swift */; };
+		47769A8E1C3F1EDC00F67233 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A881C3F1EDC00F67233 /* UIImage+Extension.swift */; };
+		47769A931C3F210800F67233 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A8F1C3F210800F67233 /* Array+Extension.swift */; };
+		47769A941C3F210800F67233 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A8F1C3F210800F67233 /* Array+Extension.swift */; };
+		47769A951C3F210800F67233 /* NSData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A901C3F210800F67233 /* NSData+Extension.swift */; };
+		47769A961C3F210800F67233 /* NSData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A901C3F210800F67233 /* NSData+Extension.swift */; };
+		47769A971C3F210800F67233 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A911C3F210800F67233 /* NSDate+Extension.swift */; };
+		47769A981C3F210800F67233 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A911C3F210800F67233 /* NSDate+Extension.swift */; };
+		47769A991C3F210800F67233 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A921C3F210800F67233 /* Optional+Extension.swift */; };
+		47769A9A1C3F210800F67233 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A921C3F210800F67233 /* Optional+Extension.swift */; };
 		4B28248546C414CBEC4EE2CAF41A12BA /* TPKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE244A35ECB755B83EF2F1B2545C682 /* TPKit-dummy.m */; };
 		7FDB3FBFA0F9397FC50F326D3DEA0FDA /* Pods-TPKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0E0A769A5DF1B0FA0FCD2E434F3CC /* Pods-TPKit_Example-dummy.m */; };
 		8602338293CE8E3B5B757B69C1B6E2DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB188F2E1AEF9890FA61902095C4DFA /* Foundation.framework */; };
-		9E8C9B163E70FA1FC58FE2EDF65D8895 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4575E8037237B2963325611930840533 /* ReplaceMe.swift */; };
 		C8D30B17572301C333B5ACCD1438937D /* TPKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4ABE7596D48E062F2E9ED4F56FE0688 /* TPKit.bundle */; };
 		DCB36B76FFE74B2D8B005B7DF77D61EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB188F2E1AEF9890FA61902095C4DFA /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -51,8 +66,15 @@
 		35335E8900BC526C078E5CC5247694CD /* TPKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKit-umbrella.h"; sourceTree = "<group>"; };
 		35F60064FD2B2AEC846B9286BE80A871 /* Pods-TPKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TPKit_Tests-resources.sh"; sourceTree = "<group>"; };
 		3B7B0CDFF37C4860711307727A8D37C1 /* TPKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "TPKit-Private.xcconfig"; sourceTree = "<group>"; };
-		4575E8037237B2963325611930840533 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		46A92FF60C499E2793A504A6A7C7E703 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47769A821C3F1D1400F67233 /* TPBundleResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPBundleResources.swift; sourceTree = "<group>"; };
+		47769A861C3F1EDC00F67233 /* MFMailComposeViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MFMailComposeViewController+Extensions.swift"; sourceTree = "<group>"; };
+		47769A871C3F1EDC00F67233 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		47769A881C3F1EDC00F67233 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		47769A8F1C3F210800F67233 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "Foundation/Array+Extension.swift"; sourceTree = "<group>"; };
+		47769A901C3F210800F67233 /* NSData+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSData+Extension.swift"; path = "Foundation/NSData+Extension.swift"; sourceTree = "<group>"; };
+		47769A911C3F210800F67233 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+Extension.swift"; path = "Foundation/NSDate+Extension.swift"; sourceTree = "<group>"; };
+		47769A921C3F210800F67233 /* Optional+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Optional+Extension.swift"; path = "Foundation/Optional+Extension.swift"; sourceTree = "<group>"; };
 		4EA0E0A769A5DF1B0FA0FCD2E434F3CC /* Pods-TPKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPKit_Example-dummy.m"; sourceTree = "<group>"; };
 		53D9ADB6DA88E03399C6302B7FB27079 /* Pods-TPKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		55E8F03E2D7AC52BD2878F22EA1BD91B /* Pods-TPKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TPKit_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -128,7 +150,8 @@
 		29FF33098FA8593B4BEA7D8EB460D889 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4575E8037237B2963325611930840533 /* ReplaceMe.swift */,
+				47769A851C3F1D1E00F67233 /* Foundation */,
+				47769A811C3F1D0500F67233 /* UI */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -139,6 +162,28 @@
 				F2C00F029FF3394754DC8357F47A7628 /* TPKit */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		47769A811C3F1D0500F67233 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				47769A861C3F1EDC00F67233 /* MFMailComposeViewController+Extensions.swift */,
+				47769A871C3F1EDC00F67233 /* UIColor+Extension.swift */,
+				47769A881C3F1EDC00F67233 /* UIImage+Extension.swift */,
+				47769A821C3F1D1400F67233 /* TPBundleResources.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		47769A851C3F1D1E00F67233 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				47769A8F1C3F210800F67233 /* Array+Extension.swift */,
+				47769A901C3F210800F67233 /* NSData+Extension.swift */,
+				47769A911C3F210800F67233 /* NSDate+Extension.swift */,
+				47769A921C3F210800F67233 /* Optional+Extension.swift */,
+			);
+			name = Foundation;
 			sourceTree = "<group>";
 		};
 		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
@@ -356,7 +401,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -417,7 +462,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47769A971C3F210800F67233 /* NSDate+Extension.swift in Sources */,
 				7FDB3FBFA0F9397FC50F326D3DEA0FDA /* Pods-TPKit_Example-dummy.m in Sources */,
+				47769A951C3F210800F67233 /* NSData+Extension.swift in Sources */,
+				47769A891C3F1EDC00F67233 /* MFMailComposeViewController+Extensions.swift in Sources */,
+				47769A991C3F210800F67233 /* Optional+Extension.swift in Sources */,
+				47769A8D1C3F1EDC00F67233 /* UIImage+Extension.swift in Sources */,
+				47769A931C3F210800F67233 /* Array+Extension.swift in Sources */,
+				47769A831C3F1D1400F67233 /* TPBundleResources.swift in Sources */,
+				47769A8B1C3F1EDC00F67233 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,8 +478,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E8C9B163E70FA1FC58FE2EDF65D8895 /* ReplaceMe.swift in Sources */,
+				47769A981C3F210800F67233 /* NSDate+Extension.swift in Sources */,
 				4B28248546C414CBEC4EE2CAF41A12BA /* TPKit-dummy.m in Sources */,
+				47769A961C3F210800F67233 /* NSData+Extension.swift in Sources */,
+				47769A8A1C3F1EDC00F67233 /* MFMailComposeViewController+Extensions.swift in Sources */,
+				47769A9A1C3F210800F67233 /* Optional+Extension.swift in Sources */,
+				47769A8E1C3F1EDC00F67233 /* UIImage+Extension.swift in Sources */,
+				47769A941C3F210800F67233 /* Array+Extension.swift in Sources */,
+				47769A841C3F1D1400F67233 /* TPBundleResources.swift in Sources */,
+				47769A8C1C3F1EDC00F67233 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +633,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B7B0CDFF37C4860711307727A8D37C1 /* TPKit-Private.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0.1.0;
 				DEFINES_MODULE = YES;
@@ -600,6 +661,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B7B0CDFF37C4860711307727A8D37C1 /* TPKit-Private.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 0.1.0;
 				DEFINES_MODULE = YES;
@@ -657,6 +719,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F912C90EE43041BF11225315442E9DDB /* Pods-TPKit_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -698,6 +761,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA596B669C3AA3BE2793FF1587CEBFF5 /* Pods-TPKit_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
