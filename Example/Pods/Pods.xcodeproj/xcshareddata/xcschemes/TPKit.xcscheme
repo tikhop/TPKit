@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "16787EDCD56F9389D13C3640"
+               BlueprintIdentifier = "4C8DB4647900798DBC6F5166"
                BuildableName = "TPKit.framework"
                BlueprintName = "TPKit"
                ReferencedContainer = "container:Pods.xcodeproj">

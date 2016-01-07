@@ -1,15 +1,15 @@
 {
   "name": "TPKit",
   "version": "0.1.0",
-  "summary": "A short description of TPKit.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/TPKit",
+  "summary": "A collection of useful classes and categories.",
+  "description": "A collection of useful classes and categories written in Swift.",
+  "homepage": "https://github.com/tikhop/TPKit",
   "license": "MIT",
   "authors": {
     "Pavel Tikhonenko": "hi@tikhop.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/TPKit.git",
+    "git": "https://github.com/tikhop/TPKit.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -21,5 +21,6 @@
     "TPKit": [
       "Pod/Assets/*.png"
     ]
-  }
+  },
+  "frameworks": "UIKit"
 }

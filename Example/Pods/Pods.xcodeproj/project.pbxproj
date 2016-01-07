@@ -7,50 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0046D0BD43C3D4D2E1EDB1CCBBAB55AF /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8055BF27AC7DBEE74FE1D4067CBBC40 /* UIColor+Extension.swift */; };
 		02B5A5DEB9469FA9A73ABDDC332DF2D8 /* Pods-TPKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF895639469DE806A84E5AA8B2B7C2B /* Pods-TPKit_Tests-dummy.m */; };
-		1A1B9E60C1E92F1DBCE4A5E49D0DB133 /* TPKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35335E8900BC526C078E5CC5247694CD /* TPKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		117FD071470DFCEAF30E106C3052342F /* NSData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF5A8686087543BA6FEBC976C8F47CD /* NSData+Extension.swift */; };
+		224F535975337A072204CB1DABDED622 /* MFMailComposeViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A91D686219A3957596A0FE49B5446 /* MFMailComposeViewController+Extensions.swift */; };
+		289A72E7D4FBD08981B8028779ABE5F3 /* TPKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B26C4E5DEEC2BFDE0D9F2CF86997D27 /* TPKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D64505EF4880760FC788635EAE67D15 /* Pods-TPKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C38D09514B994AD386D29F2E5C941F16 /* Pods-TPKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45CEF5D5593184572929C170BDA089C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB188F2E1AEF9890FA61902095C4DFA /* Foundation.framework */; };
+		3DAED977117AB3C49459B03FCF38380A /* TPKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38974508D74C603A0D102C3DB07767B0 /* TPKit-dummy.m */; };
+		45CEF5D5593184572929C170BDA089C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA00F7186AE5DF4BAC5C38E9DC21294F /* Foundation.framework */; };
 		470C1F9740CD5CB85D83D080FF348F9D /* Pods-TPKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E8F03E2D7AC52BD2878F22EA1BD91B /* Pods-TPKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47769A831C3F1D1400F67233 /* TPBundleResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A821C3F1D1400F67233 /* TPBundleResources.swift */; };
-		47769A841C3F1D1400F67233 /* TPBundleResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A821C3F1D1400F67233 /* TPBundleResources.swift */; };
-		47769A891C3F1EDC00F67233 /* MFMailComposeViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A861C3F1EDC00F67233 /* MFMailComposeViewController+Extensions.swift */; };
-		47769A8A1C3F1EDC00F67233 /* MFMailComposeViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A861C3F1EDC00F67233 /* MFMailComposeViewController+Extensions.swift */; };
-		47769A8B1C3F1EDC00F67233 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A871C3F1EDC00F67233 /* UIColor+Extension.swift */; };
-		47769A8C1C3F1EDC00F67233 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A871C3F1EDC00F67233 /* UIColor+Extension.swift */; };
-		47769A8D1C3F1EDC00F67233 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A881C3F1EDC00F67233 /* UIImage+Extension.swift */; };
-		47769A8E1C3F1EDC00F67233 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A881C3F1EDC00F67233 /* UIImage+Extension.swift */; };
-		47769A931C3F210800F67233 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A8F1C3F210800F67233 /* Array+Extension.swift */; };
-		47769A941C3F210800F67233 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A8F1C3F210800F67233 /* Array+Extension.swift */; };
-		47769A951C3F210800F67233 /* NSData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A901C3F210800F67233 /* NSData+Extension.swift */; };
-		47769A961C3F210800F67233 /* NSData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A901C3F210800F67233 /* NSData+Extension.swift */; };
-		47769A971C3F210800F67233 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A911C3F210800F67233 /* NSDate+Extension.swift */; };
-		47769A981C3F210800F67233 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A911C3F210800F67233 /* NSDate+Extension.swift */; };
-		47769A991C3F210800F67233 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A921C3F210800F67233 /* Optional+Extension.swift */; };
-		47769A9A1C3F210800F67233 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769A921C3F210800F67233 /* Optional+Extension.swift */; };
-		4B28248546C414CBEC4EE2CAF41A12BA /* TPKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE244A35ECB755B83EF2F1B2545C682 /* TPKit-dummy.m */; };
+		5952F88B86FBE734DC0A9BB0589D9E5B /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2AB5450C38702250A9EEF1C49F666 /* Array+Extension.swift */; };
+		7BB011D3EC59B8324496D9F42D21339E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA00F7186AE5DF4BAC5C38E9DC21294F /* Foundation.framework */; };
 		7FDB3FBFA0F9397FC50F326D3DEA0FDA /* Pods-TPKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0E0A769A5DF1B0FA0FCD2E434F3CC /* Pods-TPKit_Example-dummy.m */; };
-		8602338293CE8E3B5B757B69C1B6E2DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB188F2E1AEF9890FA61902095C4DFA /* Foundation.framework */; };
-		C8D30B17572301C333B5ACCD1438937D /* TPKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4ABE7596D48E062F2E9ED4F56FE0688 /* TPKit.bundle */; };
-		DCB36B76FFE74B2D8B005B7DF77D61EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB188F2E1AEF9890FA61902095C4DFA /* Foundation.framework */; };
+		8602338293CE8E3B5B757B69C1B6E2DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA00F7186AE5DF4BAC5C38E9DC21294F /* Foundation.framework */; };
+		9A95E02E401BA56E061E222EFD8B631F /* TPKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4ABE7596D48E062F2E9ED4F56FE0688 /* TPKit.bundle */; };
+		9B575B9555D7C2345BD450A76718E324 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11F071F1395ADE7654D3C863B9FFB87 /* UIImage+Extension.swift */; };
+		A1B47C8826494344A5B9F226B86792E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78820BA3B8EA7BC9508D2CA39793A95E /* UIKit.framework */; };
+		AB361DC00FB667D58F1C92937BECCF77 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C4937F00D8100C37C852074F0A021 /* NSDate+Extension.swift */; };
+		C4A508D99E845AD3A44831EC1E237486 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F5B00D61DB35034D6991247DCD6DC1 /* Optional+Extension.swift */; };
+		E273ABAFC60B1E619E99CD9EA2DD3916 /* TPBundleResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1180D5350F7444DDC55B77C80B8BA3A8 /* TPBundleResources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		14887BAC49083D61BF5DC107F919DB41 /* PBXContainerItemProxy */ = {
+		1680EAEA0BFBE16A9B2B1D555679B247 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 90BA2C311CD9A4D3F18E2E2124ABC441;
+			remoteGlobalIDString = 80AEDD73A9FA42B918BCD04C0A7DE716;
 			remoteInfo = TPKit;
 		};
-		87D9469157DED956A72459425326F3A8 /* PBXContainerItemProxy */ = {
+		1753E32748001C513A3D365FA909783C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 90BA2C311CD9A4D3F18E2E2124ABC441;
+			remoteGlobalIDString = 80AEDD73A9FA42B918BCD04C0A7DE716;
 			remoteInfo = TPKit;
 		};
-		CA3715D3C538EF832175B68E59660AB7 /* PBXContainerItemProxy */ = {
+		92E52643C390D4070A150E27CE57E741 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -61,25 +54,23 @@
 
 /* Begin PBXFileReference section */
 		000CF480E08ED6E3115389DFCF4660C0 /* TPKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKit-prefix.pch"; sourceTree = "<group>"; };
+		01336A981B3533649ED0652AB54CB394 /* TPKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0678495203FDE3B59E3430F0C8C3254A /* Pods-TPKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		08622CD10E701BC61F8CC8E02E7EAEC0 /* TPKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		35335E8900BC526C078E5CC5247694CD /* TPKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKit-umbrella.h"; sourceTree = "<group>"; };
+		1180D5350F7444DDC55B77C80B8BA3A8 /* TPBundleResources.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TPBundleResources.swift; sourceTree = "<group>"; };
+		2B26C4E5DEEC2BFDE0D9F2CF86997D27 /* TPKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKit-umbrella.h"; sourceTree = "<group>"; };
 		35F60064FD2B2AEC846B9286BE80A871 /* Pods-TPKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TPKit_Tests-resources.sh"; sourceTree = "<group>"; };
+		38974508D74C603A0D102C3DB07767B0 /* TPKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKit-dummy.m"; sourceTree = "<group>"; };
 		3B7B0CDFF37C4860711307727A8D37C1 /* TPKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "TPKit-Private.xcconfig"; sourceTree = "<group>"; };
 		46A92FF60C499E2793A504A6A7C7E703 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47769A821C3F1D1400F67233 /* TPBundleResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPBundleResources.swift; sourceTree = "<group>"; };
-		47769A861C3F1EDC00F67233 /* MFMailComposeViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MFMailComposeViewController+Extensions.swift"; sourceTree = "<group>"; };
-		47769A871C3F1EDC00F67233 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		47769A881C3F1EDC00F67233 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
-		47769A8F1C3F210800F67233 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "Foundation/Array+Extension.swift"; sourceTree = "<group>"; };
-		47769A901C3F210800F67233 /* NSData+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSData+Extension.swift"; path = "Foundation/NSData+Extension.swift"; sourceTree = "<group>"; };
-		47769A911C3F210800F67233 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSDate+Extension.swift"; path = "Foundation/NSDate+Extension.swift"; sourceTree = "<group>"; };
-		47769A921C3F210800F67233 /* Optional+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Optional+Extension.swift"; path = "Foundation/Optional+Extension.swift"; sourceTree = "<group>"; };
 		4EA0E0A769A5DF1B0FA0FCD2E434F3CC /* Pods-TPKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPKit_Example-dummy.m"; sourceTree = "<group>"; };
 		53D9ADB6DA88E03399C6302B7FB27079 /* Pods-TPKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		55E8F03E2D7AC52BD2878F22EA1BD91B /* Pods-TPKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TPKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		5AF5A8686087543BA6FEBC976C8F47CD /* NSData+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSData+Extension.swift"; sourceTree = "<group>"; };
 		5C7AE6EEF170FE8B2A4F79A6A6F53939 /* Pods-TPKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TPKit_Example.modulemap"; sourceTree = "<group>"; };
-		6FE244A35ECB755B83EF2F1B2545C682 /* TPKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKit-dummy.m"; sourceTree = "<group>"; };
+		61F5B00D61DB35034D6991247DCD6DC1 /* Optional+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
+		78820BA3B8EA7BC9508D2CA39793A95E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7CA2AB5450C38702250A9EEF1C49F666 /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		7E0A91D686219A3957596A0FE49B5446 /* MFMailComposeViewController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "MFMailComposeViewController+Extensions.swift"; sourceTree = "<group>"; };
 		7E6A2A8363A9A3ED8FF7C9ADE5F864FC /* Pods-TPKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TPKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8D4FE15A8A04615479CF900AACE83EC5 /* Pods-TPKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TPKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		993F05387C1B83EEA9BC79F2CC9F7237 /* Pods_TPKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TPKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,13 +81,16 @@
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BB6373B307B854F1362C4BB23A3B427D /* Pods-TPKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TPKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BBF895639469DE806A84E5AA8B2B7C2B /* Pods-TPKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		C11F071F1395ADE7654D3C863B9FFB87 /* UIImage+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		C38D09514B994AD386D29F2E5C941F16 /* Pods-TPKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TPKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		C8055BF27AC7DBEE74FE1D4067CBBC40 /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		C895A3971B018000987EA9922F70E638 /* Pods-TPKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TPKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		D1523D56AE0DF5D5F55C5F12FAA127F3 /* Pods-TPKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D1686B88B312C93A4503179956DD3F26 /* Pods_TPKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TPKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDB188F2E1AEF9890FA61902095C4DFA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DC4C4937F00D8100C37C852074F0A021 /* NSDate+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		E667DBB4C694848028ACA46A53DDC627 /* Pods-TPKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E8970C6B25ABB119E8467206648100D6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA00F7186AE5DF4BAC5C38E9DC21294F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F4ABE7596D48E062F2E9ED4F56FE0688 /* TPKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BD9CC3E00A14CB048212F1456BF505 /* TPKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKit.xcconfig; sourceTree = "<group>"; };
 		F912C90EE43041BF11225315442E9DDB /* Pods-TPKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPKit_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +98,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		227656422737CAB6B7D282D45FEBC71D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB011D3EC59B8324496D9F42D21339E /* Foundation.framework in Frameworks */,
+				A1B47C8826494344A5B9F226B86792E8 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4D75A2E1CF1D906BD806F933F1DF6984 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,14 +130,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE22F1E2D63392D4E5088823B6CAF7EE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DCB36B76FFE74B2D8B005B7DF77D61EA /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -147,11 +142,11 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		29FF33098FA8593B4BEA7D8EB460D889 /* Classes */ = {
+		2DAFDFBA7C074D57B009736025C7E7E1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				47769A851C3F1D1E00F67233 /* Foundation */,
-				47769A811C3F1D0500F67233 /* UI */,
+				A58989F62FF6C6DDA8FDA6F3DD356339 /* Foundation */,
+				F37773BEAA439F3FE0B6C13EC4D90398 /* UI */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -164,34 +159,12 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		47769A811C3F1D0500F67233 /* UI */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				47769A861C3F1EDC00F67233 /* MFMailComposeViewController+Extensions.swift */,
-				47769A871C3F1EDC00F67233 /* UIColor+Extension.swift */,
-				47769A881C3F1EDC00F67233 /* UIImage+Extension.swift */,
-				47769A821C3F1D1400F67233 /* TPBundleResources.swift */,
+				D0FB9306D21AF23A056944AE037CBFFF /* iOS */,
 			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		47769A851C3F1D1E00F67233 /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				47769A8F1C3F210800F67233 /* Array+Extension.swift */,
-				47769A901C3F210800F67233 /* NSData+Extension.swift */,
-				47769A911C3F210800F67233 /* NSDate+Extension.swift */,
-				47769A921C3F210800F67233 /* Optional+Extension.swift */,
-			);
-			name = Foundation;
-			sourceTree = "<group>";
-		};
-		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				DDB188F2E1AEF9890FA61902095C4DFA /* Foundation.framework */,
-			);
-			name = iOS;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6A93DFB6F9483F9557E836CF74A5EB8B /* Pods-TPKit_Tests */ = {
@@ -217,7 +190,7 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				34D4B0798FF5EFA6F374E2A4387075DA /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
 				0004B08EECA5651F929A5C2CB530541C /* Targets Support Files */,
 			);
@@ -241,12 +214,15 @@
 			path = "Target Support Files/Pods-TPKit_Example";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		A58989F62FF6C6DDA8FDA6F3DD356339 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+				7CA2AB5450C38702250A9EEF1C49F666 /* Array+Extension.swift */,
+				5AF5A8686087543BA6FEBC976C8F47CD /* NSData+Extension.swift */,
+				DC4C4937F00D8100C37C852074F0A021 /* NSDate+Extension.swift */,
+				61F5B00D61DB35034D6991247DCD6DC1 /* Optional+Extension.swift */,
 			);
-			name = Frameworks;
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		C69C8570E3F2422B8E95872E156BE976 /* Support Files */ = {
@@ -256,9 +232,9 @@
 				A1B4DEBB2345AF4725640C053F02B261 /* TPKit.modulemap */,
 				F6BD9CC3E00A14CB048212F1456BF505 /* TPKit.xcconfig */,
 				3B7B0CDFF37C4860711307727A8D37C1 /* TPKit-Private.xcconfig */,
-				6FE244A35ECB755B83EF2F1B2545C682 /* TPKit-dummy.m */,
+				38974508D74C603A0D102C3DB07767B0 /* TPKit-dummy.m */,
 				000CF480E08ED6E3115389DFCF4660C0 /* TPKit-prefix.pch */,
-				35335E8900BC526C078E5CC5247694CD /* TPKit-umbrella.h */,
+				2B26C4E5DEEC2BFDE0D9F2CF86997D27 /* TPKit-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/TPKit";
@@ -270,27 +246,47 @@
 				D1686B88B312C93A4503179956DD3F26 /* Pods_TPKit_Example.framework */,
 				993F05387C1B83EEA9BC79F2CC9F7237 /* Pods_TPKit_Tests.framework */,
 				F4ABE7596D48E062F2E9ED4F56FE0688 /* TPKit.bundle */,
-				08622CD10E701BC61F8CC8E02E7EAEC0 /* TPKit.framework */,
+				01336A981B3533649ED0652AB54CB394 /* TPKit.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D0FB9306D21AF23A056944AE037CBFFF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EA00F7186AE5DF4BAC5C38E9DC21294F /* Foundation.framework */,
+				78820BA3B8EA7BC9508D2CA39793A95E /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EB2175A1B9DABC549F9ADDC19517DC66 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				2DAFDFBA7C074D57B009736025C7E7E1 /* Classes */,
+			);
+			path = Pod;
 			sourceTree = "<group>";
 		};
 		F2C00F029FF3394754DC8357F47A7628 /* TPKit */ = {
 			isa = PBXGroup;
 			children = (
-				F5938979BF855044C285C0B20EC0B327 /* Pod */,
+				EB2175A1B9DABC549F9ADDC19517DC66 /* Pod */,
 				C69C8570E3F2422B8E95872E156BE976 /* Support Files */,
 			);
 			name = TPKit;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		F5938979BF855044C285C0B20EC0B327 /* Pod */ = {
+		F37773BEAA439F3FE0B6C13EC4D90398 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				29FF33098FA8593B4BEA7D8EB460D889 /* Classes */,
+				7E0A91D686219A3957596A0FE49B5446 /* MFMailComposeViewController+Extensions.swift */,
+				1180D5350F7444DDC55B77C80B8BA3A8 /* TPBundleResources.swift */,
+				C8055BF27AC7DBEE74FE1D4067CBBC40 /* UIColor+Extension.swift */,
+				C11F071F1395ADE7654D3C863B9FFB87 /* UIImage+Extension.swift */,
 			);
-			path = Pod;
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,19 +300,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D44DF119F67C8A50E1AD13EB1D7BEBB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A1B9E60C1E92F1DBCE4A5E49D0DB133 /* TPKit-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BAAE90AC88B9F73B2A3AB149E0563455 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				470C1F9740CD5CB85D83D080FF348F9D /* Pods-TPKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF06C0223957CE4B52BEA69889E52C31 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				289A72E7D4FBD08981B8028779ABE5F3 /* TPKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,30 +330,30 @@
 			buildRules = (
 			);
 			dependencies = (
-				4735E2369EDD4A89EEE57658BF581C08 /* PBXTargetDependency */,
+				1A03A2DA5E6972457AE09B00086599BC /* PBXTargetDependency */,
 			);
 			name = "Pods-TPKit_Example";
 			productName = "Pods-TPKit_Example";
 			productReference = D1686B88B312C93A4503179956DD3F26 /* Pods_TPKit_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		90BA2C311CD9A4D3F18E2E2124ABC441 /* TPKit */ = {
+		80AEDD73A9FA42B918BCD04C0A7DE716 /* TPKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C4E8A286AF60902D4327B7468723EF21 /* Build configuration list for PBXNativeTarget "TPKit" */;
+			buildConfigurationList = 074AC418C8EBF79B4D90E71DD1BCC4D1 /* Build configuration list for PBXNativeTarget "TPKit" */;
 			buildPhases = (
-				B1DD75C3FA0C715EDB25CCFEF9A84AB1 /* Sources */,
-				AE22F1E2D63392D4E5088823B6CAF7EE /* Frameworks */,
-				ECC7E49152206B27FB271139905EE034 /* Resources */,
-				8D44DF119F67C8A50E1AD13EB1D7BEBB /* Headers */,
+				0A6364118C43D0A517C6A03470F71595 /* Sources */,
+				227656422737CAB6B7D282D45FEBC71D /* Frameworks */,
+				735EA61BAEC8A8446C8B81239F9D04AE /* Resources */,
+				EF06C0223957CE4B52BEA69889E52C31 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				450CE79C1A2F2D42B047E5D3647BBE1C /* PBXTargetDependency */,
+				08E1E817A974C7E698CE52DED410E076 /* PBXTargetDependency */,
 			);
 			name = TPKit;
 			productName = TPKit;
-			productReference = 08622CD10E701BC61F8CC8E02E7EAEC0 /* TPKit.framework */;
+			productReference = 01336A981B3533649ED0652AB54CB394 /* TPKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E34EEE9F169E12E6282A84F5CE3BEDD7 /* Pods-TPKit_Tests */ = {
@@ -371,7 +367,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				223104D3CB2EF3FED3CFD155CAB2C8A7 /* PBXTargetDependency */,
+				6AD97906D7726FCA2E40C3D6EF7BD6E1 /* PBXTargetDependency */,
 			);
 			name = "Pods-TPKit_Tests";
 			productName = "Pods-TPKit_Tests";
@@ -401,7 +397,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -418,7 +414,7 @@
 			targets = (
 				43245DC3E9E5F47B7904C247174A3B50 /* Pods-TPKit_Example */,
 				E34EEE9F169E12E6282A84F5CE3BEDD7 /* Pods-TPKit_Tests */,
-				90BA2C311CD9A4D3F18E2E2124ABC441 /* TPKit */,
+				80AEDD73A9FA42B918BCD04C0A7DE716 /* TPKit */,
 				E919C5BC863D0C12929EF4E5A111C098 /* TPKit-TPKit */,
 			);
 		};
@@ -432,17 +428,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ECC7E49152206B27FB271139905EE034 /* Resources */ = {
+		735EA61BAEC8A8446C8B81239F9D04AE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8D30B17572301C333B5ACCD1438937D /* TPKit.bundle in Resources */,
+				9A95E02E401BA56E061E222EFD8B631F /* TPKit.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A6364118C43D0A517C6A03470F71595 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5952F88B86FBE734DC0A9BB0589D9E5B /* Array+Extension.swift in Sources */,
+				224F535975337A072204CB1DABDED622 /* MFMailComposeViewController+Extensions.swift in Sources */,
+				117FD071470DFCEAF30E106C3052342F /* NSData+Extension.swift in Sources */,
+				AB361DC00FB667D58F1C92937BECCF77 /* NSDate+Extension.swift in Sources */,
+				C4A508D99E845AD3A44831EC1E237486 /* Optional+Extension.swift in Sources */,
+				E273ABAFC60B1E619E99CD9EA2DD3916 /* TPBundleResources.swift in Sources */,
+				3DAED977117AB3C49459B03FCF38380A /* TPKit-dummy.m in Sources */,
+				0046D0BD43C3D4D2E1EDB1CCBBAB55AF /* UIColor+Extension.swift in Sources */,
+				9B575B9555D7C2345BD450A76718E324 /* UIImage+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5E1BD8C0144ACB20E3487C326E7B4862 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -462,54 +474,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47769A971C3F210800F67233 /* NSDate+Extension.swift in Sources */,
 				7FDB3FBFA0F9397FC50F326D3DEA0FDA /* Pods-TPKit_Example-dummy.m in Sources */,
-				47769A951C3F210800F67233 /* NSData+Extension.swift in Sources */,
-				47769A891C3F1EDC00F67233 /* MFMailComposeViewController+Extensions.swift in Sources */,
-				47769A991C3F210800F67233 /* Optional+Extension.swift in Sources */,
-				47769A8D1C3F1EDC00F67233 /* UIImage+Extension.swift in Sources */,
-				47769A931C3F210800F67233 /* Array+Extension.swift in Sources */,
-				47769A831C3F1D1400F67233 /* TPBundleResources.swift in Sources */,
-				47769A8B1C3F1EDC00F67233 /* UIColor+Extension.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1DD75C3FA0C715EDB25CCFEF9A84AB1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				47769A981C3F210800F67233 /* NSDate+Extension.swift in Sources */,
-				4B28248546C414CBEC4EE2CAF41A12BA /* TPKit-dummy.m in Sources */,
-				47769A961C3F210800F67233 /* NSData+Extension.swift in Sources */,
-				47769A8A1C3F1EDC00F67233 /* MFMailComposeViewController+Extensions.swift in Sources */,
-				47769A9A1C3F210800F67233 /* Optional+Extension.swift in Sources */,
-				47769A8E1C3F1EDC00F67233 /* UIImage+Extension.swift in Sources */,
-				47769A941C3F210800F67233 /* Array+Extension.swift in Sources */,
-				47769A841C3F1D1400F67233 /* TPBundleResources.swift in Sources */,
-				47769A8C1C3F1EDC00F67233 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		223104D3CB2EF3FED3CFD155CAB2C8A7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TPKit;
-			target = 90BA2C311CD9A4D3F18E2E2124ABC441 /* TPKit */;
-			targetProxy = 87D9469157DED956A72459425326F3A8 /* PBXContainerItemProxy */;
-		};
-		450CE79C1A2F2D42B047E5D3647BBE1C /* PBXTargetDependency */ = {
+		08E1E817A974C7E698CE52DED410E076 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "TPKit-TPKit";
 			target = E919C5BC863D0C12929EF4E5A111C098 /* TPKit-TPKit */;
-			targetProxy = CA3715D3C538EF832175B68E59660AB7 /* PBXContainerItemProxy */;
+			targetProxy = 92E52643C390D4070A150E27CE57E741 /* PBXContainerItemProxy */;
 		};
-		4735E2369EDD4A89EEE57658BF581C08 /* PBXTargetDependency */ = {
+		1A03A2DA5E6972457AE09B00086599BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TPKit;
-			target = 90BA2C311CD9A4D3F18E2E2124ABC441 /* TPKit */;
-			targetProxy = 14887BAC49083D61BF5DC107F919DB41 /* PBXContainerItemProxy */;
+			target = 80AEDD73A9FA42B918BCD04C0A7DE716 /* TPKit */;
+			targetProxy = 1680EAEA0BFBE16A9B2B1D555679B247 /* PBXContainerItemProxy */;
+		};
+		6AD97906D7726FCA2E40C3D6EF7BD6E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TPKit;
+			target = 80AEDD73A9FA42B918BCD04C0A7DE716 /* TPKit */;
+			targetProxy = 1753E32748001C513A3D365FA909783C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -557,6 +545,33 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		37C4FFC69A673F949F94EE52FCFC406F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B7B0CDFF37C4860711307727A8D37C1 /* TPKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TPKit/TPKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPKit/TPKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TPKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -629,63 +644,6 @@
 			};
 			name = Debug;
 		};
-		796265FB0DA2A97CE2DF42719130D1C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B7B0CDFF37C4860711307727A8D37C1 /* TPKit-Private.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TPKit/TPKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TPKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TPKit/TPKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TPKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7AE1E65FA089C7BDA9A8C2155A713792 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B7B0CDFF37C4860711307727A8D37C1 /* TPKit-Private.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TPKit/TPKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TPKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TPKit/TPKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TPKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		9078AEB2E624E59A3B400C9E89787DCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0678495203FDE3B59E3430F0C8C3254A /* Pods-TPKit_Tests.release.xcconfig */;
@@ -715,11 +673,38 @@
 			};
 			name = Release;
 		};
+		91ECF457A1FFB242307CEFE3F9EAECBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B7B0CDFF37C4860711307727A8D37C1 /* TPKit-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TPKit/TPKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPKit/TPKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TPKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		CF67CEE321A6FD52AD2FAA4B45D158E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F912C90EE43041BF11225315442E9DDB /* Pods-TPKit_Example.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -761,7 +746,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA596B669C3AA3BE2793FF1587CEBFF5 /* Pods-TPKit_Example.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -791,6 +775,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		074AC418C8EBF79B4D90E71DD1BCC4D1 /* Build configuration list for PBXNativeTarget "TPKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91ECF457A1FFB242307CEFE3F9EAECBE /* Debug */,
+				37C4FFC69A673F949F94EE52FCFC406F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -814,15 +807,6 @@
 			buildConfigurations = (
 				E3AD6BEEDBE8C06725CE170D838E1BB9 /* Debug */,
 				23E6108AE6A0D43D0B25C580D7A5A58A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C4E8A286AF60902D4327B7468723EF21 /* Build configuration list for PBXNativeTarget "TPKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7AE1E65FA089C7BDA9A8C2155A713792 /* Debug */,
-				796265FB0DA2A97CE2DF42719130D1C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

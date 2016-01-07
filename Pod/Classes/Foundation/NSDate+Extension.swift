@@ -14,8 +14,8 @@ extension NSDate
     {
         let calendar = NSCalendar.currentCalendar()
         
-        let comp1 = calendar.components([.NSMonthCalendarUnit, .NSDayCalendarUnit, .NSYearCalendarUnit], fromDate: self)
-        let comp2 = calendar.components([.NSMonthCalendarUnit, .NSDayCalendarUnit, .NSYearCalendarUnit], fromDate: date)
+        let comp1 = calendar.components([NSCalendarUnit.Month, NSCalendarUnit.Day, NSCalendarUnit.Year], fromDate: self)
+        let comp2 = calendar.components([NSCalendarUnit.Month, NSCalendarUnit.Day, NSCalendarUnit.Year], fromDate: date)
         
         return (comp1.day == comp2.day) && (comp1.month == comp2.month) && (comp1.year == comp2.year)
     }
@@ -42,7 +42,7 @@ extension NSDate
         let now = NSDate()
         var today:NSDate? = nil;
         
-        NSCalendar.currentCalendar().rangeOfUnit(NSCalendarUnit.NSDayCalendarUnit, startDate: &today, interval: nil, forDate: now)
+        NSCalendar.currentCalendar().rangeOfUnit(NSCalendarUnit.Day, startDate: &today, interval: nil, forDate: now)
         
         let components = NSDateComponents()
         components.day = -days
