@@ -1,6 +1,5 @@
 # TPKit
 
-[![CI Status](http://img.shields.io/travis/Pavel Tikhonenko/TPKit.svg?style=flat)](https://travis-ci.org/Pavel Tikhonenko/TPKit)
 [![Version](https://img.shields.io/cocoapods/v/TPKit.svg?style=flat)](http://cocoapods.org/pods/TPKit)
 [![License](https://img.shields.io/cocoapods/l/TPKit.svg?style=flat)](http://cocoapods.org/pods/TPKit)
 [![Platform](https://img.shields.io/cocoapods/p/TPKit.svg?style=flat)](http://cocoapods.org/pods/TPKit)
