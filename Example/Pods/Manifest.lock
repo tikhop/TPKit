@@ -1,0 +1,14 @@
+PODS:
+  - TPKit (0.1.0)
+
+DEPENDENCIES:
+  - TPKit (from `../`)
+
+EXTERNAL SOURCES:
+  TPKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  TPKit: aa71f101b77dd89dc573408b38aa1e6c76b120db
+
+COCOAPODS: 0.38.2

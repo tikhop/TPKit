@@ -1,0 +1,6 @@
+framework module TPKit {
+  umbrella header "TPKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
