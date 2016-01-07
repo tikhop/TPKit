@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'TPKit_Example', :exclusive => true do
+  pod "TPKit", :path => "../"
+end
+
+target 'TPKit_Tests', :exclusive => true do
+  pod "TPKit", :path => "../"
+
+  
+end
