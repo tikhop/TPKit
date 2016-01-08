@@ -38,6 +38,7 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
     s.frameworks = 'UIKit', 'XCTest' #, 'MapKit'
+    s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
     #s.framework = 'XCTest'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
