@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TPKit"
-  s.version          = "0.1.4"
+  s.version          = "0.1.5"
   s.summary          = "A collection of useful classes and categories."
 
 
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/tikhop/TPKit.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '7.1'
+  s.platform     = :ios, '8.2'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
@@ -37,8 +37,7 @@ Pod::Spec.new do |s|
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-    s.frameworks = 'UIKit', 'XCTest' #, 'MapKit'
-    s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
+  s.frameworks = 'UIKit' #, 'MapKit'
     #s.framework = 'XCTest'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
