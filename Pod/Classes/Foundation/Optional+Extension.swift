@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Optional
+public extension Optional
 {
     func unwrapWithBlock(block: ((some: Wrapped) -> ()))
     {

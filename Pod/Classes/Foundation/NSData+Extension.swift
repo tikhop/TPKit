@@ -9,7 +9,7 @@
 
 import Foundation
 
-extension NSData
+public extension NSData
 {
     func hexString() -> NSString
     {

@@ -9,7 +9,7 @@ import UIKit
 import CoreGraphics
 
 
-extension UIImage
+public extension UIImage
 {
     func fixRevert() -> UIImage
     {

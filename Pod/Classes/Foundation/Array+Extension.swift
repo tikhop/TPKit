@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension SequenceType
+public extension SequenceType
 {
     public func generatePairs() -> [(Self.Generator.Element, Self.Generator.Element?)]
     {

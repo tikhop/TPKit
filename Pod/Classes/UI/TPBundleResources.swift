@@ -15,7 +15,7 @@ var kMainStoryboardName: String {
     }
 }
 
-class TPBundleResources
+public class TPBundleResources
 {
     class func nib(name: String) -> UINib?
     {
@@ -62,7 +62,7 @@ class TPBundleResources
 }
 
 
-extension TPBundleResources
+public extension TPBundleResources
 {
     //Obtain view controller by name from main storyboard
     class func vcWithName(name: String) -> UIViewController?
