@@ -8,6 +8,14 @@
 import UIKit
 import CoreGraphics
 
+public enum UIImageResizeAlignment
+{
+    case Top
+    case Bottom
+    case Left
+    case Right
+    case Center
+}
 
 public extension UIImage
 {
@@ -15,8 +23,6 @@ public extension UIImage
     {
         if(self.imageOrientation == UIImageOrientation.Up) { return self }
      
-        let image = self.CGImage
-        
         var transform: CGAffineTransform  = CGAffineTransformIdentity;
         
         switch (self.imageOrientation)
@@ -51,18 +57,11 @@ public extension UIImage
         default:
             break;
         }
-
-        let width = Int(size.width)
-        let height = Int(size.height)
-        let bitsPerComponent = CGImageGetBitsPerComponent(image)
-        let bytesPerRow = CGImageGetBytesPerRow(image)
-        let colorSpace = CGImageGetColorSpace(image)
-        let bitmapInfo = CGImageGetBitmapInfo(image)
         
-        let context = CGBitmapContextCreate(nil, width, height, bitsPerComponent, bytesPerRow, colorSpace, bitmapInfo.rawValue
-        )
+        let context = bitmapContext(size)
         
         CGContextConcatCTM(context, transform)
+
         switch (self.imageOrientation)
         {
         case UIImageOrientation.Left, UIImageOrientation.LeftMirrored, UIImageOrientation.Right, UIImageOrientation.RightMirrored:
@@ -74,39 +73,40 @@ public extension UIImage
             break;
         }
         
-        
-        let CGimg = CGBitmapContextCreateImage(context);
-        let img = UIImage(CGImage: CGimg!)
+        let img = UIImage(CGImage: CGBitmapContextCreateImage(context)!)
         return img
     }
     
     func resizeImageAspectFit(fitWidth: UInt) -> UIImage?
     {
-        
-        let image = self.CGImage
-        
         let factor = CGFloat(CGImageGetWidth(image))/CGFloat(fitWidth)
         
         let width = CGFloat(CGImageGetWidth(image))/factor
         let height = CGFloat(CGImageGetHeight(image))/factor
-        let bitsPerComponent = CGImageGetBitsPerComponent(image)
-        let bytesPerRow = CGImageGetBytesPerRow(image)
-        let colorSpace = CGImageGetColorSpace(image)
-        let bitmapInfo = CGImageGetBitmapInfo(image)
-
-        let context = CGBitmapContextCreate(nil, Int(width), Int(height), bitsPerComponent, bytesPerRow, colorSpace, bitmapInfo.rawValue)
+        
+        return resizeImage(CGSize(width: width, height: height))
+    }
+    
+    func resizeImageAspectFill(size: CGSize, alignment: UIImageResizeAlignment = .Center)
+    {
+        
+    }
+    
+    func resizeImage(size: CGSize) -> UIImage?
+    {
+        let width = Int(size.width)
+        let height = Int(size.height)
+        
+        let context = bitmapContext(size)
         
         CGContextSetInterpolationQuality(context, CGInterpolationQuality.High)
-        
         CGContextDrawImage(context, CGRect(origin: CGPointZero, size: CGSize(width: CGFloat(width), height: CGFloat(height))), image)
         
         return UIImage(CGImage: CGBitmapContextCreateImage(context)!)
     }
     
-    func resizeImage(size: CGSize) -> UIImage?
+    private func bitmapContext(size: CGSize) -> CGContext?
     {
-        let image = self.CGImage
-        
         let width = Int(size.width)
         let height = Int(size.height)
         let bitsPerComponent = CGImageGetBitsPerComponent(image)
@@ -114,13 +114,12 @@ public extension UIImage
         let colorSpace = CGImageGetColorSpace(image)
         let bitmapInfo = CGImageGetBitmapInfo(image)
         
-        let context = CGBitmapContextCreate(nil, width, height, bitsPerComponent, bytesPerRow, colorSpace, bitmapInfo.rawValue)
-        
-        CGContextSetInterpolationQuality(context, CGInterpolationQuality.High)
-        
-        CGContextDrawImage(context, CGRect(origin: CGPointZero, size: CGSize(width: CGFloat(width), height: CGFloat(height))), image)
-        
-        return UIImage(CGImage: CGBitmapContextCreateImage(context)!)
+        return CGBitmapContextCreate(nil, width, height, bitsPerComponent, bytesPerRow, colorSpace, bitmapInfo.rawValue)
+    }
+    
+    private var image: CGImageRef?
+    {
+        return self.CGImage
     }
 }
 
