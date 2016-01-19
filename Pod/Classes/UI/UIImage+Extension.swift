@@ -138,7 +138,7 @@ public extension UIImage
     //TODO: implement this algorith using two division rather than three
     private func generateImageSize(scaleMode: UIImageScalingMode, _ containerSize: CGSize) -> CGSize
     {
-        var f: (Int, Int) -> Bool
+        var f: (CGFloat, CGFloat) -> Bool
         
         switch(scaleMode)
         {
@@ -147,12 +147,12 @@ public extension UIImage
         case .None: return containerSize
         }
         
-        let realWidth = CGImageGetWidth(image)
-        let realHeight = CGImageGetHeight(image)
+        let realWidth = CGFloat(CGImageGetWidth(image))
+        let realHeight = CGFloat(CGImageGetHeight(image))
         let realFactor = realWidth/realHeight
         
-        let width = Int(containerSize.width)
-        let height = Int(containerSize.height)
+        let width = containerSize.width
+        let height = containerSize.height
         let factor = width/height
         
         let newWidth = f(factor, realFactor) ? realWidth * height/realHeight : width

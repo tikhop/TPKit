@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension UIDevice
+public extension UIDevice
 {
     var modelName: String
     {
@@ -48,5 +48,10 @@ extension UIDevice
             case "i386", "x86_64":                          return "Simulator"
             default:                                        return identifier
         }
+    }
+    
+    var osVersionName: String
+    {
+        return "\(systemName) \(systemVersion)"
     }
 }
