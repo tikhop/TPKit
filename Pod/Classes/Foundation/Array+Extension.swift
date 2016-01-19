@@ -1,7 +1,4 @@
 //
-//  File.swift
-//  Sugarfish
-//
 //  Created by Pavel Tikhonenko on 04/12/15.
 //  Copyright © 2015 Pavel Tikhonenko. All rights reserved.
 //

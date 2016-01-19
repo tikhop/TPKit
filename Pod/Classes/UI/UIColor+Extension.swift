@@ -1,7 +1,4 @@
 //
-//  UIColor+Extension.swift
-//  Alias
-//
 //  Created by Pavel Tikhonenko on 22/03/15.
 //  Copyright (c) 2015 Pavel Tikhonenko. All rights reserved.
 //

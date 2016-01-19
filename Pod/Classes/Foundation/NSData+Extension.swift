@@ -1,7 +1,3 @@
-
-//
-//  NSData+Extension.swift
-//  Alias
 //
 //  Created by Pavel Tikhonenko on 14/04/15.
 //  Copyright (c) 2015 Pavel Tikhonenko. All rights reserved.

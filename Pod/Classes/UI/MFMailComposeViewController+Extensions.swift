@@ -1,7 +1,4 @@
 //
-//  MFMailComposeViewController+Extensions.swift
-//  Alias
-//
 //  Created by Pavel Tikhonenko on 21/05/15.
 //  Copyright (c) 2015 Pavel Tikhonenko. All rights reserved.
 //

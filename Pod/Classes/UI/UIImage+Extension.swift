@@ -1,10 +1,3 @@
-//
-//  UIImage+Extension.swift
-//  Sugarfish
-//
-//  Created by PurposeLab on 26/03/15.
-//
-
 import UIKit
 import CoreGraphics
 
