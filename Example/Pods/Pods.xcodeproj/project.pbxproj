@@ -16,6 +16,7 @@
 		3DAED977117AB3C49459B03FCF38380A /* TPKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38974508D74C603A0D102C3DB07767B0 /* TPKit-dummy.m */; };
 		45CEF5D5593184572929C170BDA089C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA00F7186AE5DF4BAC5C38E9DC21294F /* Foundation.framework */; };
 		470C1F9740CD5CB85D83D080FF348F9D /* Pods-TPKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E8F03E2D7AC52BD2878F22EA1BD91B /* Pods-TPKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47769AAE1C48790200F67233 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769AAC1C48790200F67233 /* UIDevice+Extension.swift */; };
 		5952F88B86FBE734DC0A9BB0589D9E5B /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2AB5450C38702250A9EEF1C49F666 /* Array+Extension.swift */; };
 		7BB011D3EC59B8324496D9F42D21339E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA00F7186AE5DF4BAC5C38E9DC21294F /* Foundation.framework */; };
 		7FDB3FBFA0F9397FC50F326D3DEA0FDA /* Pods-TPKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0E0A769A5DF1B0FA0FCD2E434F3CC /* Pods-TPKit_Example-dummy.m */; };
@@ -62,6 +63,7 @@
 		38974508D74C603A0D102C3DB07767B0 /* TPKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKit-dummy.m"; sourceTree = "<group>"; };
 		3B7B0CDFF37C4860711307727A8D37C1 /* TPKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "TPKit-Private.xcconfig"; sourceTree = "<group>"; };
 		46A92FF60C499E2793A504A6A7C7E703 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47769AAC1C48790200F67233 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		4EA0E0A769A5DF1B0FA0FCD2E434F3CC /* Pods-TPKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPKit_Example-dummy.m"; sourceTree = "<group>"; };
 		53D9ADB6DA88E03399C6302B7FB27079 /* Pods-TPKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		55E8F03E2D7AC52BD2878F22EA1BD91B /* Pods-TPKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TPKit_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 		A58989F62FF6C6DDA8FDA6F3DD356339 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				47769AAC1C48790200F67233 /* UIDevice+Extension.swift */,
 				7CA2AB5450C38702250A9EEF1C49F666 /* Array+Extension.swift */,
 				5AF5A8686087543BA6FEBC976C8F47CD /* NSData+Extension.swift */,
 				DC4C4937F00D8100C37C852074F0A021 /* NSDate+Extension.swift */,
@@ -397,7 +400,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -446,6 +449,7 @@
 				5952F88B86FBE734DC0A9BB0589D9E5B /* Array+Extension.swift in Sources */,
 				224F535975337A072204CB1DABDED622 /* MFMailComposeViewController+Extensions.swift in Sources */,
 				117FD071470DFCEAF30E106C3052342F /* NSData+Extension.swift in Sources */,
+				47769AAE1C48790200F67233 /* UIDevice+Extension.swift in Sources */,
 				AB361DC00FB667D58F1C92937BECCF77 /* NSDate+Extension.swift in Sources */,
 				C4A508D99E845AD3A44831EC1E237486 /* Optional+Extension.swift in Sources */,
 				E273ABAFC60B1E619E99CD9EA2DD3916 /* TPBundleResources.swift in Sources */,
@@ -705,6 +709,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F912C90EE43041BF11225315442E9DDB /* Pods-TPKit_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -746,6 +751,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA596B669C3AA3BE2793FF1587CEBFF5 /* Pods-TPKit_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
