@@ -9,33 +9,15 @@
 
 import UIKit
 
-private class ActionTrampoline<T>: NSObject
-{
-    var action: T -> Void
-    
-    init(action: T -> Void)
-    {
-        self.action = action
-    }
-    
-    @objc func action(sender: UIControl)
-    {
-        action(sender as! T)
-    }
-}
-
-let NSControlActionFunctionProtocolAssociatedObjectKey = UnsafeMutablePointer<Int8>.alloc(1)
-
-protocol TPControlActionFunctionProtocol {}
 extension UIControl: TPControlActionFunctionProtocol {}
 
 extension TPControlActionFunctionProtocol where Self: UIControl
 {
     func addAction(events: UIControlEvents, _ action: Self -> Void)
     {
-        let trampoline = ActionTrampoline(action: action)
+        let trampoline = TPActionTrampoline(action: action)
         self.addTarget(trampoline, action: "action:", forControlEvents: events)
-        objc_setAssociatedObject(self, NSControlActionFunctionProtocolAssociatedObjectKey, trampoline, .OBJC_ASSOCIATION_RETAIN)
+        objc_setAssociatedObject(self, UIControlActionFunctionProtocolAssociatedObjectKey, trampoline, .OBJC_ASSOCIATION_RETAIN)
     }
 }
 
