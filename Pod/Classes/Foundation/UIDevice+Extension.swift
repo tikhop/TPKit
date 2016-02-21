@@ -50,4 +50,27 @@ public extension UIDevice
     {
         return "\(systemName) \(systemVersion)"
     }
+    
+    var appVersion: String
+    {
+        let mainBundle = NSBundle.mainBundle()
+        return mainBundle.objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
+    }
+    
+    var buildNumber: String
+    {
+        let mainBundle = NSBundle.mainBundle()
+        return mainBundle.objectForInfoDictionaryKey(String(kCFBundleVersionKey)) as! String
+    }
+    
+    var appName: String
+    {
+        let mainBundle = NSBundle.mainBundle()
+        return mainBundle.objectForInfoDictionaryKey(String(kCFBundleNameKey)) as! String
+    }
+    
+    var fullAppName: String
+    {
+        return "\(appName) \(appVersion)/\(buildNumber)"
+    }
 }

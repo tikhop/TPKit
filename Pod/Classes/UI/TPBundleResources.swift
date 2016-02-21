@@ -79,7 +79,7 @@ public extension TPBundleResources
         return viewController as? UIViewController
     }
     
-    //Obtain view controller by idx from nib
+    //Obtain view by idx from nib
     class func viewFromNib(nibName: String, atIdx idx:Int) -> UIView?
     {
         let view =  NSBundle.mainBundle().loadNibNamed(nibName, owner: nil, options: nil)[idx] as! UIView
