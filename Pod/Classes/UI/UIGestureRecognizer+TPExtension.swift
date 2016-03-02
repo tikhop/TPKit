@@ -9,7 +9,12 @@
 import UIKit
 
 
-extension UIGestureRecognizer: TPControlActionFunctionProtocol {}
+extension UIGestureRecognizer: TPControlActionFunctionProtocol
+{
+    public func addAction(action: UIGestureRecognizer -> Void)
+    {
+    }
+}
 
 extension TPControlActionFunctionProtocol where Self: UIGestureRecognizer
 {
