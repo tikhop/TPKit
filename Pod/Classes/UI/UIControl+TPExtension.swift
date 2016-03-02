@@ -11,10 +11,6 @@ import UIKit
 
 extension UIControl: TPControlActionFunctionProtocol
 {
-    public func addAction(events: UIControlEvents, _ action: UIControl -> Void)
-    {
-        
-    }
 }
 
 extension TPControlActionFunctionProtocol where Self: UIControl
