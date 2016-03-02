@@ -7,7 +7,7 @@ import Foundation
 
 public extension NSData
 {
-    func hexString() -> NSString
+    public func hexString() -> NSString
     {
         let str = NSMutableString()
         let bytes = UnsafeBufferPointer<UInt8>(start: UnsafePointer(self.bytes), count:self.length)

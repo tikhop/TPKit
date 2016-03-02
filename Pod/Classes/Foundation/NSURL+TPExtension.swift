@@ -10,7 +10,7 @@ import Foundation
 
 extension NSURL
 {
-    func debug()
+    public func debug()
     {
         print("URL host:\(host)")
         print("URL port:\(port)")

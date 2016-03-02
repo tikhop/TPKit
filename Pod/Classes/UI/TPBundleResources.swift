@@ -17,26 +17,26 @@ var kMainStoryboardName: String {
 
 public class TPBundleResources
 {
-    class func nib(name: String) -> UINib?
+    public class func nib(name: String) -> UINib?
     {
         let nib = UINib(nibName: name, bundle: NSBundle.mainBundle());
         return nib
     }
     
     //Main storybord
-    class func mainStoryboard() -> UIStoryboard
+    public class func mainStoryboard() -> UIStoryboard
     {
         return storyboard(kMainStoryboardName)
     }
     
-    class func storyboard(name: String) -> UIStoryboard
+    public class func storyboard(name: String) -> UIStoryboard
     {
         let storyboard = UIStoryboard(name: name, bundle: NSBundle.mainBundle())
         return storyboard
     }
     
     //Obtain file from main bundle by name and fileType
-    class func fileFromBundle(fileName: String?, fileType: String?) -> NSURL?
+    public class func fileFromBundle(fileName: String?, fileType: String?) -> NSURL?
     {
         var url: NSURL?
         
@@ -48,7 +48,7 @@ public class TPBundleResources
         return url
     }
     
-    class func plistValue(key:String) -> AnyObject?
+    public class func plistValue(key:String) -> AnyObject?
     {
         let info = NSBundle.mainBundle().infoDictionary!
         

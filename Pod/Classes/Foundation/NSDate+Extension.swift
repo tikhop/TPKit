@@ -10,7 +10,7 @@ import Foundation
 
 public extension NSDate
 {
-    func isSameDay(date: NSDate) -> Bool
+    public func isSameDay(date: NSDate) -> Bool
     {
         let calendar = NSCalendar.currentCalendar()
         
@@ -20,7 +20,7 @@ public extension NSDate
         return (comp1.day == comp2.day) && (comp1.month == comp2.month) && (comp1.year == comp2.year)
     }
     
-    func isDateToday() -> Bool
+    public func isDateToday() -> Bool
     {
         let otherDay = NSCalendar.currentCalendar().components([.Era, .Year, .Month, .Day], fromDate: self)
         let today = NSCalendar.currentCalendar().components([.Era, .Year, .Month, .Day], fromDate: NSDate())
@@ -32,12 +32,12 @@ public extension NSDate
         return isToday
     }
     
-    func isDateWithinWeek() -> Bool
+    public func isDateWithinWeek() -> Bool
     {
         return isDateWithinDaysBefore(7)
     }
     
-    func isDateWithinDaysBefore(days: Int) -> Bool
+    public func isDateWithinDaysBefore(days: Int) -> Bool
     {
         let now = NSDate()
         var today:NSDate? = nil;
@@ -60,7 +60,7 @@ public extension NSDate
         return false
     }
     
-    class func dateFromString(string: String, dateFormat: String, timeZoneAbbreviation: String = "UTC") -> NSDate?
+    public class func dateFromString(string: String, dateFormat: String, timeZoneAbbreviation: String = "UTC") -> NSDate?
     {
         let formatter = NSDateFormatter()
         formatter.dateFormat = dateFormat
@@ -70,7 +70,7 @@ public extension NSDate
         return date
     }
     
-    class func formatedStringFromDate(date: NSDate, dateFormat: String = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS'Z'", timeZoneAbbreviation: String = "UTC") -> String?
+    public class func formatedStringFromDate(date: NSDate, dateFormat: String = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS'Z'", timeZoneAbbreviation: String = "UTC") -> String?
     {
         let formatter = NSDateFormatter()
         formatter.dateFormat = dateFormat

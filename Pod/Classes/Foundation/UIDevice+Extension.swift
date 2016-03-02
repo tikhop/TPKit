@@ -6,7 +6,7 @@ import Foundation
 
 public extension UIDevice
 {
-    var modelName: String
+    public var modelName: String
     {
         var systemInfo = utsname()
         uname(&systemInfo)
@@ -46,30 +46,30 @@ public extension UIDevice
         }
     }
     
-    var osVersionName: String
+    public var osVersionName: String
     {
         return "\(systemName) \(systemVersion)"
     }
     
-    var appVersion: String
+    public var appVersion: String
     {
         let mainBundle = NSBundle.mainBundle()
         return mainBundle.objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
     }
     
-    var buildNumber: String
+    public var buildNumber: String
     {
         let mainBundle = NSBundle.mainBundle()
         return mainBundle.objectForInfoDictionaryKey(String(kCFBundleVersionKey)) as! String
     }
     
-    var appName: String
+    public var appName: String
     {
         let mainBundle = NSBundle.mainBundle()
         return mainBundle.objectForInfoDictionaryKey(String(kCFBundleNameKey)) as! String
     }
     
-    var fullAppName: String
+    public var fullAppName: String
     {
         return "\(appName) \(appVersion)/\(buildNumber)"
     }

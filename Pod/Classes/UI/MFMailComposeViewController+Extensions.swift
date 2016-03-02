@@ -13,7 +13,7 @@ extension UIViewController: MFMailComposeViewControllerDelegate
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    func createReportAProblemVC(toRecipient: String) -> MFMailComposeViewController?
+    public func createReportAProblemVC(toRecipient: String) -> MFMailComposeViewController?
     {
         if !MFMailComposeViewController.canSendMail() { return nil }
         

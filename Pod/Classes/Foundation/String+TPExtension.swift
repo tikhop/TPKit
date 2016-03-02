@@ -10,29 +10,29 @@ import Foundation
 
 public extension String
 {
-    var lenght: Int
+    public var lenght: Int
     {
         return characters.count
     }
     
-    func count() -> Int
+    public func count() -> Int
     {
         return lenght
     }
     
-    subscript (i:Int) -> Character
+    public subscript (i:Int) -> Character
     {
         if self.characters.count == 0 { return Character("") }
         
         return self[startIndex.advancedBy(i)]
     }
     
-    subscript (i: Int) -> String
+    public subscript (i: Int) -> String
     {
         return String(self[i] as Character)
     }
     
-    subscript (r: Range<Int>) -> String
+    public subscript (r: Range<Int>) -> String
     {
         return substringWithRange(Range(start: startIndex.advancedBy(r.startIndex), end: startIndex.advancedBy(r.endIndex)))
     }

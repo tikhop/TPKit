@@ -22,7 +22,7 @@ public struct UIImageResizeAlignment: OptionSetType
 
 public extension UIImage
 {
-    func fixRevert() -> UIImage
+    public func fixRevert() -> UIImage
     {
         if(self.imageOrientation == UIImageOrientation.Up) { return self }
         
@@ -80,12 +80,12 @@ public extension UIImage
         return img
     }
     
-    func resizeImageScaleToFill(size: CGSize) -> UIImage?
+    public func resizeImageScaleToFill(size: CGSize) -> UIImage?
     {
         return resizeImage(bitmapContext(size), CGRect(origin: CGPointZero, size: size))
     }
     
-    func resizeImageAspectFit(size: CGSize, alignment: UIImageResizeAlignment = .Center) -> UIImage?
+    public func resizeImageAspectFit(size: CGSize, alignment: UIImageResizeAlignment = .Center) -> UIImage?
     {
         let imgSize = generateImageSize(.Fit, size)
         let point = generateImageOrigin(alignment, size, imgSize)
@@ -94,7 +94,7 @@ public extension UIImage
     }
     
     
-    func resizeImageAspectFill(size: CGSize, alignment: UIImageResizeAlignment = .Center) -> UIImage?
+    public func resizeImageAspectFill(size: CGSize, alignment: UIImageResizeAlignment = .Center) -> UIImage?
     {
         let imgSize = generateImageSize(.Fill, size)
         let point = generateImageOrigin(alignment, size, imgSize)
