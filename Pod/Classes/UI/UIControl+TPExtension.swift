@@ -9,7 +9,7 @@
 
 import UIKit
 
-extension UIControl: TPControlActionFunctionProtocol
+public extension UIControl: TPControlActionFunctionProtocol
 {
 }
 
