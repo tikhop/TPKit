@@ -25,4 +25,4 @@ internal class TPActionTrampoline<T>: NSObject
 
 let UIControlActionFunctionProtocolAssociatedObjectKey = UnsafeMutablePointer<Int8>.alloc(1)
 
-internal protocol TPControlActionFunctionProtocol {}
+public protocol TPControlActionFunctionProtocol {}

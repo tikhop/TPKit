@@ -13,9 +13,9 @@ extension UIGestureRecognizer: TPControlActionFunctionProtocol
 {
 }
 
-extension TPControlActionFunctionProtocol where Self: UIGestureRecognizer
+public extension TPControlActionFunctionProtocol where Self: UIGestureRecognizer
 {
-    func addAction(action: Self -> Void)
+    public func addAction(action: Self -> Void)
     {
         let trampoline = TPActionTrampoline(action: action)
         self.addTarget(trampoline, action: "action:")
