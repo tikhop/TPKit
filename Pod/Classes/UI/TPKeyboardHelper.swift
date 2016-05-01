@@ -34,10 +34,10 @@ public class TPKeyboardHelper
     private func subscribeForKeyboardNotifications()
     {
         let center = NSNotificationCenter.defaultCenter()
-        center.addObserver(self, selector: "keyboardWillShowNotification:", name: UIKeyboardWillShowNotification, object: nil)
-        center.addObserver(self, selector: "keyboardDidShowNotification:", name: UIKeyboardDidShowNotification, object: nil)
-        center.addObserver(self, selector: "keyboardWillHideNotification:", name: UIKeyboardWillHideNotification, object: nil)
-        center.addObserver(self, selector: "keyboardDidHideNotification:", name: UIKeyboardDidHideNotification, object: nil)
+        center.addObserver(self, selector: #selector(TPKeyboardHelper.keyboardWillShowNotification(_:)), name: UIKeyboardWillShowNotification, object: nil)
+        center.addObserver(self, selector: #selector(TPKeyboardHelper.keyboardDidShowNotification(_:)), name: UIKeyboardDidShowNotification, object: nil)
+        center.addObserver(self, selector: #selector(TPKeyboardHelper.keyboardWillHideNotification(_:)), name: UIKeyboardWillHideNotification, object: nil)
+        center.addObserver(self, selector: #selector(TPKeyboardHelper.keyboardDidHideNotification(_:)), name: UIKeyboardDidHideNotification, object: nil)
     }
     
     private func notifyListeners(info: TPKeyboardInfo)
