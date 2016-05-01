@@ -60,21 +60,22 @@ public extension NSDate
         return false
     }
     
-    public class func dateFromString(string: String, dateFormat: String, timeZoneAbbreviation: String = "UTC") -> NSDate?
+    public class func dateFromString(string: String, dateFormat: String, timeZone: NSTimeZone = NSTimeZone.localTimeZone()) -> NSDate?
     {
         let formatter = NSDateFormatter()
         formatter.dateFormat = dateFormat
-        formatter.timeZone = NSTimeZone(abbreviation: timeZoneAbbreviation)
+        formatter.timeZone = timeZone
         
         let date = formatter.dateFromString(string)
         return date
     }
     
-    public class func formatedStringFromDate(date: NSDate, dateFormat: String = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS'Z'", timeZoneAbbreviation: String = "UTC") -> String?
+    public class func formatedStringFromDate(date: NSDate, dateFormat: String = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS'Z'", timeZone: NSTimeZone = NSTimeZone.localTimeZone()) -> String?
     {
         let formatter = NSDateFormatter()
         formatter.dateFormat = dateFormat
-        formatter.timeZone = NSTimeZone(abbreviation: "UTC")
+        formatter.timeZone = timeZone
+        
     
         return formatter.stringFromDate(date)
     }

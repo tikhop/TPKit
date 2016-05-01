@@ -10,9 +10,24 @@ import Foundation
 
 public extension String
 {
+    public var first: String
+    {
+        return String(characters.prefix(1))
+    }
+    
+    public var last: String
+    {
+        return String(characters.suffix(1))
+    }
+    
     public var lenght: Int
     {
         return characters.count
+    }
+    
+    public var URLEscapedString: String
+    {
+        return stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())!
     }
     
     public func count() -> Int
@@ -65,6 +80,11 @@ public extension String
         }
         
         return nil
+    }
+        
+    public var uppercaseFirstLetter: String
+    {
+        return first.uppercaseString + String(characters.dropFirst())
     }
 }
 

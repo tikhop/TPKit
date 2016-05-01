@@ -9,7 +9,7 @@
 import UIKit
 
 
-public extension UIGestureRecognizer: TPControlActionFunctionProtocol
+extension UIGestureRecognizer: TPControlActionFunctionProtocol
 {
 }
 

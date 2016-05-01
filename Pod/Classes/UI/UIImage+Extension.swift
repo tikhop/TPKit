@@ -22,6 +22,11 @@ public struct UIImageResizeAlignment: OptionSetType
 
 public extension UIImage
 {
+    public func color() -> UIColor
+    {
+        return UIColor(patternImage: self)
+    }
+    
     public func fixRevert() -> UIImage
     {
         if(self.imageOrientation == UIImageOrientation.Up) { return self }
@@ -188,7 +193,7 @@ public extension UIImage
     }
     
     private var image: CGImageRef?
-        {
+    {
             return self.CGImage
     }
 }

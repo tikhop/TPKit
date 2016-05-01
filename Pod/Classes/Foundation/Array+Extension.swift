@@ -30,4 +30,13 @@ public extension SequenceType
         
         return result
     }
+    
+}
+
+public extension Array
+{
+    public var decompose:(head: Element, tail: [Element])?
+    {
+        return isEmpty ? nil : (self[0], Array(self[1..<count]))
+    }
 }
