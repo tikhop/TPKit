@@ -13,7 +13,7 @@ public extension UIViewController
     public func displayChildViewController(vc: UIViewController)
     {
         self.addChildViewController(vc)
-        view.addSubview(view)
+        view.addSubview(vc.view)
         vc.didMoveToParentViewController(self)
     }
     

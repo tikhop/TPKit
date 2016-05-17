@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TPKit"
-  s.version          = "0.2.3"
+  s.version          = "0.2.4"
   s.summary          = "A collection of useful classes and categories."
 
 
