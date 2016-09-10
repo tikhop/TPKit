@@ -107,6 +107,15 @@ public extension UIImage
         return resizeImage(bitmapContext(size), CGRect(origin: point, size: imgSize))
     }
     
+    public class func image(withLabel label: UILabel) -> UIImage?
+    {
+        UIGraphicsBeginImageContextWithOptions(label.bounds.size, false, 0.0)
+        label.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return img
+    }
+    
     fileprivate func resizeImage(_ context: CGContext?, _ rect: CGRect) -> UIImage?
     {
         context!.interpolationQuality = CGInterpolationQuality.high

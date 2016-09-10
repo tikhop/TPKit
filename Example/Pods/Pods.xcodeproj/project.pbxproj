@@ -19,6 +19,12 @@
 		472790C21C5EA4A600AF2DF4 /* UIGestureRecognizer+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472790C11C5EA4A600AF2DF4 /* UIGestureRecognizer+TPExtension.swift */; };
 		472790C41C5EA5DF00AF2DF4 /* TPUICommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472790C31C5EA5DF00AF2DF4 /* TPUICommon.swift */; };
 		474E52041C4E16F200E3EAC3 /* UIControl+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474E52031C4E16F200E3EAC3 /* UIControl+TPExtension.swift */; };
+		475D81361D840655002F4C1A /* UITextField+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D81351D840655002F4C1A /* UITextField+TPExtension.swift */; };
+		475D81371D840655002F4C1A /* UITextField+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D81351D840655002F4C1A /* UITextField+TPExtension.swift */; };
+		475D81391D8407D5002F4C1A /* UILabel+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D81381D8407D5002F4C1A /* UILabel+TPExtension.swift */; };
+		475D813A1D8407D5002F4C1A /* UILabel+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D81381D8407D5002F4C1A /* UILabel+TPExtension.swift */; };
+		475D813C1D840882002F4C1A /* UITextView+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D813B1D840882002F4C1A /* UITextView+TPExtension.swift */; };
+		475D813D1D840882002F4C1A /* UITextView+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D813B1D840882002F4C1A /* UITextView+TPExtension.swift */; };
 		47769AAE1C48790200F67233 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769AAC1C48790200F67233 /* UIDevice+Extension.swift */; };
 		47769AB01C4DC05A00F67233 /* UIApplication+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769AAF1C4DC05A00F67233 /* UIApplication+TPExtension.swift */; };
 		47769AB21C4DC1E400F67233 /* TPFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769AB11C4DC1E400F67233 /* TPFoundation.swift */; };
@@ -77,6 +83,9 @@
 		472790C11C5EA4A600AF2DF4 /* UIGestureRecognizer+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+TPExtension.swift"; sourceTree = "<group>"; };
 		472790C31C5EA5DF00AF2DF4 /* TPUICommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPUICommon.swift; sourceTree = "<group>"; };
 		474E52031C4E16F200E3EAC3 /* UIControl+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+TPExtension.swift"; sourceTree = "<group>"; };
+		475D81351D840655002F4C1A /* UITextField+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+TPExtension.swift"; sourceTree = "<group>"; };
+		475D81381D8407D5002F4C1A /* UILabel+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+TPExtension.swift"; sourceTree = "<group>"; };
+		475D813B1D840882002F4C1A /* UITextView+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+TPExtension.swift"; sourceTree = "<group>"; };
 		47769AAC1C48790200F67233 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "../Foundation/UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		47769AAF1C4DC05A00F67233 /* UIApplication+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+TPExtension.swift"; sourceTree = "<group>"; };
 		47769AB11C4DC1E400F67233 /* TPFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPFoundation.swift; sourceTree = "<group>"; };
@@ -168,7 +177,6 @@
 		2DAFDFBA7C074D57B009736025C7E7E1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				47B089AC1C685A420011E8BB /* Debug */,
 				A58989F62FF6C6DDA8FDA6F3DD356339 /* Foundation */,
 				F37773BEAA439F3FE0B6C13EC4D90398 /* UI */,
 			);
@@ -189,13 +197,6 @@
 				D0FB9306D21AF23A056944AE037CBFFF /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		47B089AC1C685A420011E8BB /* Debug */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Debug;
 			sourceTree = "<group>";
 		};
 		6A93DFB6F9483F9557E836CF74A5EB8B /* Pods-TPKit_Tests */ = {
@@ -327,6 +328,9 @@
 				472790C31C5EA5DF00AF2DF4 /* TPUICommon.swift */,
 				47B089FC1C78D2A20011E8BB /* TPKeyboardHelper.swift */,
 				47B08A161C7993690011E8BB /* UIViewController+TPExtension.swift */,
+				475D81351D840655002F4C1A /* UITextField+TPExtension.swift */,
+				475D81381D8407D5002F4C1A /* UILabel+TPExtension.swift */,
+				475D813B1D840882002F4C1A /* UITextView+TPExtension.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -509,11 +513,14 @@
 				C4A508D99E845AD3A44831EC1E237486 /* Optional+Extension.swift in Sources */,
 				472790C41C5EA5DF00AF2DF4 /* TPUICommon.swift in Sources */,
 				E273ABAFC60B1E619E99CD9EA2DD3916 /* TPBundleResources.swift in Sources */,
+				475D813A1D8407D5002F4C1A /* UILabel+TPExtension.swift in Sources */,
 				3DAED977117AB3C49459B03FCF38380A /* TPKit-dummy.m in Sources */,
 				47769AB21C4DC1E400F67233 /* TPFoundation.swift in Sources */,
 				47B089B41C68EE8C0011E8BB /* String+TPExtension.swift in Sources */,
 				0046D0BD43C3D4D2E1EDB1CCBBAB55AF /* UIColor+Extension.swift in Sources */,
 				47846E4B1C5B681B0084B3A4 /* NSBundle+TPExtension.swift in Sources */,
+				475D81371D840655002F4C1A /* UITextField+TPExtension.swift in Sources */,
+				475D813D1D840882002F4C1A /* UITextView+TPExtension.swift in Sources */,
 				47769AB01C4DC05A00F67233 /* UIApplication+TPExtension.swift in Sources */,
 				474E52041C4E16F200E3EAC3 /* UIControl+TPExtension.swift in Sources */,
 				472790C21C5EA4A600AF2DF4 /* UIGestureRecognizer+TPExtension.swift in Sources */,
@@ -541,7 +548,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				475D81361D840655002F4C1A /* UITextField+TPExtension.swift in Sources */,
 				47B089B21C686C8F0011E8BB /* NSURL+TPExtension.swift in Sources */,
+				475D81391D8407D5002F4C1A /* UILabel+TPExtension.swift in Sources */,
+				475D813C1D840882002F4C1A /* UITextView+TPExtension.swift in Sources */,
 				7FDB3FBFA0F9397FC50F326D3DEA0FDA /* Pods-TPKit_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

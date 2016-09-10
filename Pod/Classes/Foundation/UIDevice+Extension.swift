@@ -73,4 +73,9 @@ public extension UIDevice
     {
         return "\(appName) \(appVersion)/\(buildNumber)"
     }
+    
+    public var isIpad: Bool
+    {
+        return userInterfaceIdiom == .pad
+    }
 }
