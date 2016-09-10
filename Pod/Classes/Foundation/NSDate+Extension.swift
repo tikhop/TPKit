@@ -10,7 +10,7 @@ import Foundation
 
 public extension Date
 {
-    public func isSameDay(_ date: Date) -> Bool
+    public func isSame(to date: Date) -> Bool
     {
         let calendar = Calendar.current
         
@@ -40,18 +40,13 @@ public extension Date
     public func isDateWithinDaysBefore(_ days: Int) -> Bool
     {
         let now = Date()
-        var today:Date? = nil;
+        let calendar = Calendar.current
         
-        (Calendar.current as NSCalendar).range(of: NSCalendar.Unit.day, start: &today, interval: nil, for: now)
-        
-        var components = DateComponents()
-        components.day = -days
-        
-        let beforeDate = (Calendar.current as NSCalendar).date(byAdding: components, to: today!, options: NSCalendar.Options(rawValue:0))
+        let beforeDate = calendar.date(byAdding: .day, value: -days, to: now, wrappingComponents: false)
         
         if(self.compare(beforeDate!) == .orderedDescending)
         {
-            if(self.compare(today!) == .orderedAscending)
+            if(self.compare(now) == .orderedAscending)
             {
                 return true
             }
@@ -60,7 +55,7 @@ public extension Date
         return false
     }
     
-    public static func dateFromString(_ string: String, dateFormat: String, timeZone: TimeZone = TimeZone.autoupdatingCurrent) -> Date?
+    public static func date(fromString string: String, dateFormat: String, timeZone: TimeZone = TimeZone.autoupdatingCurrent) -> Date?
     {
         let formatter = DateFormatter()
         formatter.dateFormat = dateFormat
@@ -70,7 +65,7 @@ public extension Date
         return date
     }
     
-    public static func formatedStringFromDate(_ date: Date, dateFormat: String = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS'Z'", timeZone: TimeZone = TimeZone.autoupdatingCurrent) -> String?
+    public static func formatedString(fromDate date: Date, dateFormat: String = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS'Z'", timeZone: TimeZone = TimeZone.autoupdatingCurrent) -> String?
     {
         let formatter = DateFormatter()
         formatter.dateFormat = dateFormat

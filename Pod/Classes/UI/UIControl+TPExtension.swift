@@ -15,7 +15,7 @@ extension UIControl: TPControlActionFunctionProtocol
 
 public extension TPControlActionFunctionProtocol where Self: UIControl
 {
-    public func addAction(_ events: UIControlEvents, _ action: (Self) -> Void)
+    public func addAction(_ events: UIControlEvents, _ action: @escaping (Self) -> Void)
     {
         let trampoline = TPActionTrampoline(action: action)
         self.addTarget(trampoline, action: Selector("action:"), for: events)

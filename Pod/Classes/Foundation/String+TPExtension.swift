@@ -71,15 +71,12 @@ public extension String
     
     public func rangeFromNSRange(_ nsRange : NSRange) -> Range<String.Index>?
     {
-        let from16 = utf16.startIndex.advancedBy(nsRange.location, limit: utf16.endIndex)
-        let to16 = from16.advancedBy(nsRange.length, limit: utf16.endIndex)
-
-        if let from = String.Index(from16, within: self), let to = String.Index(to16, within: self)
+        guard let from16 = utf16.index(utf16.startIndex, offsetBy: nsRange.location, limitedBy: utf16.endIndex), let to16 = utf16.index(from16, offsetBy: nsRange.length, limitedBy: utf16.endIndex), let from = String.Index(from16, within: self), let to = String.Index(to16, within: self) else
         {
-            return from ..< to
+            return nil
         }
         
-        return nil
+        return from ..< to
     }
         
     public var uppercaseFirstLetter: String
