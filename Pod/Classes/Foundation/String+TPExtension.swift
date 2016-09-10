@@ -20,7 +20,7 @@ public extension String
         return String(characters.suffix(1))
     }
     
-    public var lenght: Int
+    public var length: Int
     {
         return characters.count
     }
@@ -32,7 +32,7 @@ public extension String
     
     public func count() -> Int
     {
-        return lenght
+        return length
     }
     
     public subscript (i:Int) -> Character
@@ -56,7 +56,7 @@ public extension String
     {
         if let regex = TPFoundation.regex(pattern, ignoreCase: ignoreCase)
         {
-            let range = NSMakeRange(0, lenght)
+            let range = NSMakeRange(0, length)
             return regex.stringByReplacingMatches(in: self, options: [.anchored], range: range, withTemplate: replacementString)
         }
         
