@@ -8,16 +8,16 @@ import UIKit
 
 extension UIViewController: MFMailComposeViewControllerDelegate
 {
-    public func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?)
+    public func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?)
     {
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
-    public func createReportAProblemVC(toRecipient: String) -> MFMailComposeViewController?
+    public func createReportAProblemVC(_ toRecipient: String) -> MFMailComposeViewController?
     {
         if !MFMailComposeViewController.canSendMail() { return nil }
         
-        let device = UIDevice.currentDevice()
+        let device = UIDevice.current
         let info = "Hardware: \(device.modelName)\nSystem Version: \(device.osVersionName)"
         
         let mailComposer = MFMailComposeViewController()

@@ -10,20 +10,20 @@ import Foundation
 
 class TPFoundation
 {
-    internal class func regex(pattern: String, ignoreCase: Bool = false) -> NSRegularExpression?
+    internal class func regex(_ pattern: String, ignoreCase: Bool = false) -> NSRegularExpression?
     {
-        var options = NSRegularExpressionOptions.DotMatchesLineSeparators.rawValue
+        var options = NSRegularExpression.Options.dotMatchesLineSeparators.rawValue
         
         if ignoreCase
         {
-            options = NSRegularExpressionOptions.CaseInsensitive.rawValue | options
+            options = NSRegularExpression.Options.caseInsensitive.rawValue | options
         }
         
         var regex: NSRegularExpression?
         
         do
         {
-            regex = try NSRegularExpression(pattern: pattern, options: NSRegularExpressionOptions(rawValue: options))
+            regex = try NSRegularExpression(pattern: pattern, options: NSRegularExpression.Options(rawValue: options))
         } catch _ {
             //Error
         }

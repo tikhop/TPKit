@@ -7,24 +7,24 @@ import UIKit
 
 public  extension UIColor
 {
-    public class func imageFromColor(color:UIColor) -> UIImage
+    public class func imageFromColor(_ color:UIColor) -> UIImage
     {
         return imageFromColor(color, width:1, height:1)
     }
     
-    public class func imageFromColor(color:UIColor, width:CGFloat, height:CGFloat) -> UIImage
+    public class func imageFromColor(_ color:UIColor, width:CGFloat, height:CGFloat) -> UIImage
     {
-        let rect = CGRectMake(0, 0, width, height)
+        let rect = CGRect(x: 0, y: 0, width: width, height: height)
         UIGraphicsBeginImageContext(rect.size)
         let context = UIGraphicsGetCurrentContext()
-        CGContextSetFillColorWithColor(context, color.CGColor)
-        CGContextFillRect(context, rect)
+        context?.setFillColor(color.cgColor)
+        context?.fill(rect)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        return image
+        return image!
     }
 
-    public class func hexColor(color: Int32) -> UIColor
+    public class func hexColor(_ color: Int32) -> UIColor
     {
         let r = CGFloat((color >> 16)&0xFF)/255.0
         let g = CGFloat((color >> 8)&0xFF)/255.0

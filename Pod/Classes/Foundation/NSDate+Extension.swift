@@ -8,22 +8,22 @@
 
 import Foundation
 
-public extension NSDate
+public extension Date
 {
-    public func isSameDay(date: NSDate) -> Bool
+    public func isSameDay(_ date: Date) -> Bool
     {
-        let calendar = NSCalendar.currentCalendar()
+        let calendar = Calendar.current
         
-        let comp1 = calendar.components([NSCalendarUnit.Month, NSCalendarUnit.Day, NSCalendarUnit.Year], fromDate: self)
-        let comp2 = calendar.components([NSCalendarUnit.Month, NSCalendarUnit.Day, NSCalendarUnit.Year], fromDate: date)
+        let comp1 = (calendar as NSCalendar).components([NSCalendar.Unit.month, NSCalendar.Unit.day, NSCalendar.Unit.year], from: self)
+        let comp2 = (calendar as NSCalendar).components([NSCalendar.Unit.month, NSCalendar.Unit.day, NSCalendar.Unit.year], from: date)
         
         return (comp1.day == comp2.day) && (comp1.month == comp2.month) && (comp1.year == comp2.year)
     }
     
     public func isDateToday() -> Bool
     {
-        let otherDay = NSCalendar.currentCalendar().components([.Era, .Year, .Month, .Day], fromDate: self)
-        let today = NSCalendar.currentCalendar().components([.Era, .Year, .Month, .Day], fromDate: NSDate())
+        let otherDay = (Calendar.current as NSCalendar).components([.era, .year, .month, .day], from: self)
+        let today = (Calendar.current as NSCalendar).components([.era, .year, .month, .day], from: Date())
         
         let isToday = (today.day == otherDay.day &&
             today.month == otherDay.month &&
@@ -37,21 +37,21 @@ public extension NSDate
         return isDateWithinDaysBefore(7)
     }
     
-    public func isDateWithinDaysBefore(days: Int) -> Bool
+    public func isDateWithinDaysBefore(_ days: Int) -> Bool
     {
-        let now = NSDate()
-        var today:NSDate? = nil;
+        let now = Date()
+        var today:Date? = nil;
         
-        NSCalendar.currentCalendar().rangeOfUnit(NSCalendarUnit.Day, startDate: &today, interval: nil, forDate: now)
+        (Calendar.current as NSCalendar).range(of: NSCalendar.Unit.day, start: &today, interval: nil, for: now)
         
-        let components = NSDateComponents()
+        var components = DateComponents()
         components.day = -days
         
-        let beforeDate = NSCalendar.currentCalendar().dateByAddingComponents(components, toDate: today!, options: NSCalendarOptions(rawValue:0))
+        let beforeDate = (Calendar.current as NSCalendar).date(byAdding: components, to: today!, options: NSCalendar.Options(rawValue:0))
         
-        if(self.compare(beforeDate!) == .OrderedDescending)
+        if(self.compare(beforeDate!) == .orderedDescending)
         {
-            if(self.compare(today!) == .OrderedAscending)
+            if(self.compare(today!) == .orderedAscending)
             {
                 return true
             }
@@ -60,23 +60,23 @@ public extension NSDate
         return false
     }
     
-    public class func dateFromString(string: String, dateFormat: String, timeZone: NSTimeZone = NSTimeZone.localTimeZone()) -> NSDate?
+    public static func dateFromString(_ string: String, dateFormat: String, timeZone: TimeZone = TimeZone.autoupdatingCurrent) -> Date?
     {
-        let formatter = NSDateFormatter()
+        let formatter = DateFormatter()
         formatter.dateFormat = dateFormat
         formatter.timeZone = timeZone
         
-        let date = formatter.dateFromString(string)
+        let date = formatter.date(from: string)
         return date
     }
     
-    public class func formatedStringFromDate(date: NSDate, dateFormat: String = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS'Z'", timeZone: NSTimeZone = NSTimeZone.localTimeZone()) -> String?
+    public static func formatedStringFromDate(_ date: Date, dateFormat: String = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS'Z'", timeZone: TimeZone = TimeZone.autoupdatingCurrent) -> String?
     {
-        let formatter = NSDateFormatter()
+        let formatter = DateFormatter()
         formatter.dateFormat = dateFormat
         formatter.timeZone = timeZone
         
     
-        return formatter.stringFromDate(date)
+        return formatter.string(from: date)
     }
 }

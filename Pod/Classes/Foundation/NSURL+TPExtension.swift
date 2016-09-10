@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension NSURL
+extension URL
 {
     public func debug()
     {
@@ -16,12 +16,12 @@ extension NSURL
         print("URL port:\(port)")
         print("URL path:\(path)")
         print("URL fragment:\(fragment)")
-        print("URL parameterString:\(parameterString)")
+        print("URL parameterString:\(path)")
         print("URL query:\(query)")
         print("URL relativePath:\(relativePath)")
         
         print("URL Path components:")
-        pathComponents?.forEach
+        pathComponents.forEach
         {
             print($0)
         }

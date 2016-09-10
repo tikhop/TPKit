@@ -5,14 +5,14 @@
 
 import Foundation
 
-public extension SequenceType
+public extension Sequence
 {
-    public func generatePairs() -> [(Self.Generator.Element, Self.Generator.Element?)]
+    public func generatePairs() -> [(Self.Iterator.Element, Self.Iterator.Element?)]
     {
-        var result:[(Self.Generator.Element, Self.Generator.Element?)] = []
-        var pair:(Self.Generator.Element, Self.Generator.Element?)!
+        var result:[(Self.Iterator.Element, Self.Iterator.Element?)] = []
+        var pair:(Self.Iterator.Element, Self.Iterator.Element?)!
         
-        for (i, item) in self.enumerate()
+        for (i, item) in self.enumerated()
         {
             if i%2 == 0
             {
@@ -23,7 +23,7 @@ public extension SequenceType
             }
         }
         
-        if result.count != Int(round(Float(self.underestimateCount())/2.0))
+        if result.count != Int(round(Float(self.underestimatedCount)/2.0))
         {
             result.append(pair)
         }

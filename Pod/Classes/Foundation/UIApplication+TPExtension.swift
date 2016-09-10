@@ -12,11 +12,11 @@ public extension UIApplication
 {
     public class var applicationInfoString: String
     {
-        let mainBundle = NSBundle.mainBundle()
+        let mainBundle = Bundle.main
     
-        let shortVersion = mainBundle.objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
-        let version = mainBundle.objectForInfoDictionaryKey(String(kCFBundleNameKey)) as! String
-        let appName = mainBundle.objectForInfoDictionaryKey(String(kCFBundleVersionKey)) as! String
+        let shortVersion = mainBundle.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
+        let version = mainBundle.object(forInfoDictionaryKey: String(kCFBundleNameKey)) as! String
+        let appName = mainBundle.object(forInfoDictionaryKey: String(kCFBundleVersionKey)) as! String
         return "\(appName) \(version)/\(shortVersion)"
     }
     
