@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TPKit"
-  s.version          = "0.3.1"
+  s.version          = "0.3.2"
   s.summary          = "A collection of useful classes and categories."
 
 
@@ -30,9 +30,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'TPKit' => ['Pod/Assets/*.png']
-  }
 
   s.frameworks = 'UIKit' #, 'MapKit'
 end
