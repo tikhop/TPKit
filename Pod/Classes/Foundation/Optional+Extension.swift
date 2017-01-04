@@ -7,13 +7,13 @@ import Foundation
 
 public extension Optional
 {
-    public func unwrapWithBlock(block: ((some: Wrapped) -> ()))
+    public func unwrapWithBlock(_ block: ((_ some: Wrapped) -> ()))
     {
         switch self
         {
-        case .Some(let val):
-            block(some: val)
-        case .None:
+        case .some(let val):
+            block(val)
+        case .none:
             break
         }
         

@@ -8,16 +8,16 @@
 
 import Foundation
 
-public extension NSBundle
+public extension Bundle
 {
-    public class func appStoreReceiptURL() -> NSURL?
+    public class func appStoreReceiptURL() -> URL?
     {
-        return NSBundle.mainBundle().appStoreReceiptURL
+        return Bundle.main.appStoreReceiptURL
     }
     
-    public class func appStoreReceiptData() -> NSData?
+    public class func appStoreReceiptData() -> Data?
     {
-        if let receiptUrl = appStoreReceiptURL(), let receipt = NSData(contentsOfURL: receiptUrl)
+        if let receiptUrl = appStoreReceiptURL(), let receipt = try? Data(contentsOf: receiptUrl)
         {
             return receipt
         }
@@ -29,7 +29,7 @@ public extension NSBundle
     {
         if let receipt = appStoreReceiptData()
         {
-            return receipt.base64EncodedStringWithOptions(NSDataBase64EncodingOptions(rawValue: 0))
+            return receipt.base64EncodedString(options: NSData.Base64EncodingOptions(rawValue: 0))
         }
         
         return nil

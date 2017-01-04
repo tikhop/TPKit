@@ -20,26 +20,26 @@ public extension String
         return String(characters.suffix(1))
     }
     
-    public var lenght: Int
+    public var length: Int
     {
         return characters.count
     }
     
     public var URLEscapedString: String
     {
-        return stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())!
+        return addingPercentEncoding(withAllowedCharacters: CharacterSet.urlHostAllowed)!
     }
     
     public func count() -> Int
     {
-        return lenght
+        return length
     }
     
     public subscript (i:Int) -> Character
     {
         if self.characters.count == 0 { return Character("") }
         
-        return self[startIndex.advancedBy(i)]
+        return self[characters.index(startIndex, offsetBy: i)]
     }
     
     public subscript (i: Int) -> String
@@ -49,15 +49,15 @@ public extension String
     
     public subscript (r: Range<Int>) -> String
     {
-        return substringWithRange(Range(start: startIndex.advancedBy(r.startIndex), end: startIndex.advancedBy(r.endIndex)))
+        return substring(with: (characters.index(startIndex, offsetBy: r.lowerBound) ..< characters.index(startIndex, offsetBy: r.upperBound)))
     }
     
-    public func replaceMatches(pattern: String, withString replacementString: String, ignoreCase: Bool = false) -> String?
+    public func replaceMatches(_ pattern: String, withString replacementString: String, ignoreCase: Bool = false) -> String?
     {
         if let regex = TPFoundation.regex(pattern, ignoreCase: ignoreCase)
         {
-            let range = NSMakeRange(0, lenght)
-            return regex.stringByReplacingMatchesInString(self, options: [.Anchored], range: range, withTemplate: replacementString)
+            let range = NSMakeRange(0, length)
+            return regex.stringByReplacingMatches(in: self, options: [.anchored], range: range, withTemplate: replacementString)
         }
         
         return nil
@@ -66,25 +66,22 @@ public extension String
     public func validAsEmail() -> Bool
     {
         let emailRegEx = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
-        return NSPredicate(format:"SELF MATCHES %@", emailRegEx).evaluateWithObject(self)
+        return NSPredicate(format:"SELF MATCHES %@", emailRegEx).evaluate(with: self)
     }
     
-    public func rangeFromNSRange(nsRange : NSRange) -> Range<String.Index>?
+    public func rangeFromNSRange(_ nsRange : NSRange) -> Range<String.Index>?
     {
-        let from16 = utf16.startIndex.advancedBy(nsRange.location, limit: utf16.endIndex)
-        let to16 = from16.advancedBy(nsRange.length, limit: utf16.endIndex)
-
-        if let from = String.Index(from16, within: self), let to = String.Index(to16, within: self)
+        guard let from16 = utf16.index(utf16.startIndex, offsetBy: nsRange.location, limitedBy: utf16.endIndex), let to16 = utf16.index(from16, offsetBy: nsRange.length, limitedBy: utf16.endIndex), let from = String.Index(from16, within: self), let to = String.Index(to16, within: self) else
         {
-            return from ..< to
+            return nil
         }
         
-        return nil
+        return from ..< to
     }
         
     public var uppercaseFirstLetter: String
     {
-        return first.uppercaseString + String(characters.dropFirst())
+        return first.uppercased() + String(characters.dropFirst())
     }
 }
 

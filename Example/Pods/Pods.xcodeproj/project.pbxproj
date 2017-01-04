@@ -19,6 +19,12 @@
 		472790C21C5EA4A600AF2DF4 /* UIGestureRecognizer+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472790C11C5EA4A600AF2DF4 /* UIGestureRecognizer+TPExtension.swift */; };
 		472790C41C5EA5DF00AF2DF4 /* TPUICommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472790C31C5EA5DF00AF2DF4 /* TPUICommon.swift */; };
 		474E52041C4E16F200E3EAC3 /* UIControl+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474E52031C4E16F200E3EAC3 /* UIControl+TPExtension.swift */; };
+		475D81361D840655002F4C1A /* UITextField+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D81351D840655002F4C1A /* UITextField+TPExtension.swift */; };
+		475D81371D840655002F4C1A /* UITextField+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D81351D840655002F4C1A /* UITextField+TPExtension.swift */; };
+		475D81391D8407D5002F4C1A /* UILabel+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D81381D8407D5002F4C1A /* UILabel+TPExtension.swift */; };
+		475D813A1D8407D5002F4C1A /* UILabel+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D81381D8407D5002F4C1A /* UILabel+TPExtension.swift */; };
+		475D813C1D840882002F4C1A /* UITextView+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D813B1D840882002F4C1A /* UITextView+TPExtension.swift */; };
+		475D813D1D840882002F4C1A /* UITextView+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475D813B1D840882002F4C1A /* UITextView+TPExtension.swift */; };
 		47769AAE1C48790200F67233 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769AAC1C48790200F67233 /* UIDevice+Extension.swift */; };
 		47769AB01C4DC05A00F67233 /* UIApplication+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769AAF1C4DC05A00F67233 /* UIApplication+TPExtension.swift */; };
 		47769AB21C4DC1E400F67233 /* TPFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769AB11C4DC1E400F67233 /* TPFoundation.swift */; };
@@ -77,6 +83,9 @@
 		472790C11C5EA4A600AF2DF4 /* UIGestureRecognizer+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+TPExtension.swift"; sourceTree = "<group>"; };
 		472790C31C5EA5DF00AF2DF4 /* TPUICommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPUICommon.swift; sourceTree = "<group>"; };
 		474E52031C4E16F200E3EAC3 /* UIControl+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+TPExtension.swift"; sourceTree = "<group>"; };
+		475D81351D840655002F4C1A /* UITextField+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+TPExtension.swift"; sourceTree = "<group>"; };
+		475D81381D8407D5002F4C1A /* UILabel+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+TPExtension.swift"; sourceTree = "<group>"; };
+		475D813B1D840882002F4C1A /* UITextView+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+TPExtension.swift"; sourceTree = "<group>"; };
 		47769AAC1C48790200F67233 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "../Foundation/UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		47769AAF1C4DC05A00F67233 /* UIApplication+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+TPExtension.swift"; sourceTree = "<group>"; };
 		47769AB11C4DC1E400F67233 /* TPFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPFoundation.swift; sourceTree = "<group>"; };
@@ -168,7 +177,6 @@
 		2DAFDFBA7C074D57B009736025C7E7E1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				47B089AC1C685A420011E8BB /* Debug */,
 				A58989F62FF6C6DDA8FDA6F3DD356339 /* Foundation */,
 				F37773BEAA439F3FE0B6C13EC4D90398 /* UI */,
 			);
@@ -189,13 +197,6 @@
 				D0FB9306D21AF23A056944AE037CBFFF /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		47B089AC1C685A420011E8BB /* Debug */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Debug;
 			sourceTree = "<group>";
 		};
 		6A93DFB6F9483F9557E836CF74A5EB8B /* Pods-TPKit_Tests */ = {
@@ -327,6 +328,9 @@
 				472790C31C5EA5DF00AF2DF4 /* TPUICommon.swift */,
 				47B089FC1C78D2A20011E8BB /* TPKeyboardHelper.swift */,
 				47B08A161C7993690011E8BB /* UIViewController+TPExtension.swift */,
+				475D81351D840655002F4C1A /* UITextField+TPExtension.swift */,
+				475D81381D8407D5002F4C1A /* UILabel+TPExtension.swift */,
+				475D813B1D840882002F4C1A /* UITextView+TPExtension.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -441,6 +445,20 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					43245DC3E9E5F47B7904C247174A3B50 = {
+						LastSwiftMigration = 0800;
+					};
+					80AEDD73A9FA42B918BCD04C0A7DE716 = {
+						LastSwiftMigration = 0800;
+					};
+					E34EEE9F169E12E6282A84F5CE3BEDD7 = {
+						LastSwiftMigration = 0800;
+					};
+					E919C5BC863D0C12929EF4E5A111C098 = {
+						LastSwiftMigration = 0800;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -495,11 +513,14 @@
 				C4A508D99E845AD3A44831EC1E237486 /* Optional+Extension.swift in Sources */,
 				472790C41C5EA5DF00AF2DF4 /* TPUICommon.swift in Sources */,
 				E273ABAFC60B1E619E99CD9EA2DD3916 /* TPBundleResources.swift in Sources */,
+				475D813A1D8407D5002F4C1A /* UILabel+TPExtension.swift in Sources */,
 				3DAED977117AB3C49459B03FCF38380A /* TPKit-dummy.m in Sources */,
 				47769AB21C4DC1E400F67233 /* TPFoundation.swift in Sources */,
 				47B089B41C68EE8C0011E8BB /* String+TPExtension.swift in Sources */,
 				0046D0BD43C3D4D2E1EDB1CCBBAB55AF /* UIColor+Extension.swift in Sources */,
 				47846E4B1C5B681B0084B3A4 /* NSBundle+TPExtension.swift in Sources */,
+				475D81371D840655002F4C1A /* UITextField+TPExtension.swift in Sources */,
+				475D813D1D840882002F4C1A /* UITextView+TPExtension.swift in Sources */,
 				47769AB01C4DC05A00F67233 /* UIApplication+TPExtension.swift in Sources */,
 				474E52041C4E16F200E3EAC3 /* UIControl+TPExtension.swift in Sources */,
 				472790C21C5EA4A600AF2DF4 /* UIGestureRecognizer+TPExtension.swift in Sources */,
@@ -527,7 +548,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				475D81361D840655002F4C1A /* UITextField+TPExtension.swift in Sources */,
 				47B089B21C686C8F0011E8BB /* NSURL+TPExtension.swift in Sources */,
+				475D81391D8407D5002F4C1A /* UILabel+TPExtension.swift in Sources */,
+				475D813C1D840882002F4C1A /* UITextView+TPExtension.swift in Sources */,
 				7FDB3FBFA0F9397FC50F326D3DEA0FDA /* Pods-TPKit_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,7 +607,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
@@ -598,6 +622,7 @@
 				PRODUCT_NAME = TPKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -616,7 +641,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TPKit/TPKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TPKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TPKit/TPKit.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -624,6 +649,7 @@
 				PRODUCT_NAME = TPKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -663,7 +689,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
@@ -695,6 +721,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -725,6 +752,7 @@
 				PRODUCT_NAME = Pods_TPKit_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -745,7 +773,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TPKit/TPKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TPKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/TPKit/TPKit.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -754,6 +782,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -774,7 +803,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-TPKit_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods-TPKit_Example/Pods-TPKit_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -785,6 +814,7 @@
 				PRODUCT_NAME = Pods_TPKit_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -799,6 +829,7 @@
 				PRODUCT_NAME = TPKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -817,7 +848,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-TPKit_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods-TPKit_Example/Pods-TPKit_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -829,6 +860,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

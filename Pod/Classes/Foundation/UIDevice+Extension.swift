@@ -13,7 +13,7 @@ public extension UIDevice
         let machineMirror = Mirror(reflecting: systemInfo.machine)
         
         let identifier = machineMirror.children.reduce("") { identifier, element in
-            guard let value = element.value as? Int8 where value != 0 else { return identifier }
+            guard let value = element.value as? Int8 , value != 0 else { return identifier }
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
         
@@ -53,24 +53,29 @@ public extension UIDevice
     
     public var appVersion: String
     {
-        let mainBundle = NSBundle.mainBundle()
-        return mainBundle.objectForInfoDictionaryKey("CFBundleShortVersionString") as! String
+        let mainBundle = Bundle.main
+        return mainBundle.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
     }
     
     public var buildNumber: String
     {
-        let mainBundle = NSBundle.mainBundle()
-        return mainBundle.objectForInfoDictionaryKey(String(kCFBundleVersionKey)) as! String
+        let mainBundle = Bundle.main
+        return mainBundle.object(forInfoDictionaryKey: String(kCFBundleVersionKey)) as! String
     }
     
     public var appName: String
     {
-        let mainBundle = NSBundle.mainBundle()
-        return mainBundle.objectForInfoDictionaryKey(String(kCFBundleNameKey)) as! String
+        let mainBundle = Bundle.main
+        return mainBundle.object(forInfoDictionaryKey: String(kCFBundleNameKey)) as! String
     }
     
     public var fullAppName: String
     {
         return "\(appName) \(appVersion)/\(buildNumber)"
+    }
+    
+    public var isIpad: Bool
+    {
+        return userInterfaceIdiom == .pad
     }
 }

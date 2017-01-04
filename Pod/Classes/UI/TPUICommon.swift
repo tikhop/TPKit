@@ -10,19 +10,19 @@ import UIKit
 
 internal class TPActionTrampoline<T>: NSObject
 {
-    var action: T -> Void
+    var action: (T) -> Void
     
-    init(action: T -> Void)
+    init(action: @escaping (T) -> Void)
     {
         self.action = action
     }
     
-    @objc func action(sender: NSObject)
+    @objc func action(_ sender: NSObject)
     {
         action(sender as! T)
     }
 }
 
-let UIControlActionFunctionProtocolAssociatedObjectKey = UnsafeMutablePointer<Int8>.alloc(1)
+let UIControlActionFunctionProtocolAssociatedObjectKey = UnsafeMutablePointer<Int8>.allocate(capacity: 1)
 
 public protocol TPControlActionFunctionProtocol {}

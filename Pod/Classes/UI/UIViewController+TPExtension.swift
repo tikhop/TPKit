@@ -10,30 +10,30 @@ import UIKit
 
 public extension UIViewController
 {
-    public func displayChildViewController(vc: UIViewController)
+    public func display(_ vc: UIViewController)
     {
         self.addChildViewController(vc)
-        view.addSubview(view)
-        vc.didMoveToParentViewController(self)
+        view.addSubview(vc.view)
+        vc.didMove(toParentViewController: self)
     }
     
-    public func removeViewController(vc: UIViewController)
+    public func remove(_ vc: UIViewController)
     {
-        vc.willMoveToParentViewController(nil)
+        vc.willMove(toParentViewController: nil)
         vc.view.removeFromSuperview()
         vc.removeFromParentViewController()
     }
     
-    public func addToViewController(vc: UIViewController)
+    public func addToViewController(_ vc: UIViewController)
     {
         vc.addChildViewController(self)
         vc.view.addSubview(view)
-        self.didMoveToParentViewController(vc)
+        self.didMove(toParentViewController: vc)
     }
     
     public func removeFromViewController()
     {
-        willMoveToParentViewController(nil)
+        willMove(toParentViewController: nil)
         view.removeFromSuperview()
         removeFromParentViewController()
     }

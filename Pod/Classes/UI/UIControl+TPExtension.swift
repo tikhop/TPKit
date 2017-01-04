@@ -15,10 +15,10 @@ extension UIControl: TPControlActionFunctionProtocol
 
 public extension TPControlActionFunctionProtocol where Self: UIControl
 {
-    public func addAction(events: UIControlEvents, _ action: Self -> Void)
+    public func addAction(_ events: UIControlEvents, _ action: @escaping (Self) -> Void)
     {
         let trampoline = TPActionTrampoline(action: action)
-        self.addTarget(trampoline, action: Selector("action:"), forControlEvents: events)
+        self.addTarget(trampoline, action: Selector("action:"), for: events)
         objc_setAssociatedObject(self, UIControlActionFunctionProtocolAssociatedObjectKey, trampoline, .OBJC_ASSOCIATION_RETAIN)
     }
 }
