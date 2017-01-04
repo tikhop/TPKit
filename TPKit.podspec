@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TPKit"
-  s.version          = "0.2.4"
+  s.version          = "0.3"
   s.summary          = "A collection of useful classes and categories."
 
 
@@ -22,11 +22,9 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = "https://github.com/tikhop/TPKit"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Pavel Tikhonenko" => "hi@tikhop.com" }
   s.source           = { :git => "https://github.com/tikhop/TPKit.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.2'
   s.requires_arc = true
@@ -36,8 +34,5 @@ Pod::Spec.new do |s|
     'TPKit' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit' #, 'MapKit'
-    #s.framework = 'XCTest'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
