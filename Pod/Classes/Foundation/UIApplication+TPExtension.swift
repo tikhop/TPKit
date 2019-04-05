@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIApplication
 {
-    public class var applicationInfoString: String
+    class var applicationInfoString: String
     {
         let mainBundle = Bundle.main
     

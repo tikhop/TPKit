@@ -7,7 +7,7 @@ import Foundation
 
 public extension Sequence
 {
-    public func generatePairs() -> [(Self.Iterator.Element, Self.Iterator.Element?)]
+    func generatePairs() -> [(Self.Iterator.Element, Self.Iterator.Element?)]
     {
         var result:[(Self.Iterator.Element, Self.Iterator.Element?)] = []
         var pair:(Self.Iterator.Element, Self.Iterator.Element?)!
@@ -35,7 +35,7 @@ public extension Sequence
 
 public extension Array
 {
-    public var decompose:(head: Element, tail: [Element])?
+    var decompose:(head: Element, tail: [Element])?
     {
         return isEmpty ? nil : (self[0], Array(self[1..<count]))
     }

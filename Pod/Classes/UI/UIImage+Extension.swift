@@ -13,23 +13,23 @@ public struct UIImageResizeAlignment: OptionSet
     public let rawValue : UInt
     public init(rawValue: UInt) { self.rawValue = rawValue }
     
-    public static let Center = UIImageResizeAlignment(rawValue: UInt(1 << 0))
-    public static let Top = UIImageResizeAlignment(rawValue: UInt(1 << 1))
-    public static let Bottom = UIImageResizeAlignment(rawValue: UInt(1 << 2))
-    public static let Left = UIImageResizeAlignment(rawValue: UInt(1 << 3))
-    public static let Right = UIImageResizeAlignment(rawValue: UInt(1 << 4))
+    public static let center = UIImageResizeAlignment(rawValue: UInt(1 << 0))
+    public static let top = UIImageResizeAlignment(rawValue: UInt(1 << 1))
+    public static let bottom = UIImageResizeAlignment(rawValue: UInt(1 << 2))
+    public static let left = UIImageResizeAlignment(rawValue: UInt(1 << 3))
+    public static let right = UIImageResizeAlignment(rawValue: UInt(1 << 4))
 }
 
 public extension UIImage
 {
-    public func color() -> UIColor
+    func color() -> UIColor
     {
         return UIColor(patternImage: self)
     }
     
-    public func fixRevert() -> UIImage
+    func fixRevert() -> UIImage
     {
-        if(self.imageOrientation == UIImageOrientation.up) { return self }
+        if(self.imageOrientation == UIImage.Orientation.up) { return self }
         
         var transform: CGAffineTransform  = CGAffineTransform.identity;
         
@@ -37,16 +37,16 @@ public extension UIImage
         {
         case .down, .downMirrored:
             transform = transform.translatedBy(x: self.size.width, y: self.size.height);
-            transform = transform.rotated(by: CGFloat(M_PI));
+            transform = transform.rotated(by: CGFloat(Double.pi/2));
             
         case .left, .leftMirrored:
             transform = transform.translatedBy(x: self.size.width, y: 0);
-            transform = transform.rotated(by: CGFloat(M_PI_2));
+            transform = transform.rotated(by: CGFloat(Double.pi/2));
             break;
             
         case .right, .rightMirrored:
             transform = transform.translatedBy(x: 0, y: self.size.height);
-            transform = transform.rotated(by: -CGFloat(M_PI_2));
+            transform = transform.rotated(by: -CGFloat(Double.pi/2));
             break;
         case .up, .upMirrored:
             break;
@@ -85,29 +85,29 @@ public extension UIImage
         return img
     }
     
-    public func resizeImageScaleToFill(_ size: CGSize) -> UIImage?
+    func resizeImageScaleToFill(size: CGSize) -> UIImage?
     {
-        return resizeImage(bitmapContext(size), CGRect(origin: CGPoint.zero, size: size))
+        return resizeImage(context: bitmapContext(size), rect: CGRect(origin: CGPoint.zero, size: size))
     }
     
-    public func resizeImageAspectFit(_ size: CGSize, alignment: UIImageResizeAlignment = .Center) -> UIImage?
+    func resizeImageAspectFit(size: CGSize, alignment: UIImageResizeAlignment = .center) -> UIImage?
     {
         let imgSize = generateImageSize(.fit, size)
         let point = generateImageOrigin(alignment, size, imgSize)
         
-        return resizeImage(bitmapContext(size), CGRect(origin: point, size: imgSize))
+        return resizeImage(context: bitmapContext(size), rect: CGRect(origin: point, size: imgSize))
     }
     
     
-    public func resizeImageAspectFill(_ size: CGSize, alignment: UIImageResizeAlignment = .Center) -> UIImage?
+    func resizeImageAspectFill(size: CGSize, alignment: UIImageResizeAlignment = .center) -> UIImage?
     {
         let imgSize = generateImageSize(.fill, size)
         let point = generateImageOrigin(alignment, size, imgSize)
         
-        return resizeImage(bitmapContext(size), CGRect(origin: point, size: imgSize))
+        return resizeImage(context: bitmapContext(size), rect: CGRect(origin: point, size: imgSize))
     }
     
-    public class func image(withLabel label: UILabel) -> UIImage?
+    class func image(from label: UILabel) -> UIImage?
     {
         UIGraphicsBeginImageContextWithOptions(label.bounds.size, false, 0.0)
         label.layer.render(in: UIGraphicsGetCurrentContext()!)
@@ -116,7 +116,7 @@ public extension UIImage
         return img
     }
     
-    fileprivate func resizeImage(_ context: CGContext?, _ rect: CGRect) -> UIImage?
+    fileprivate func resizeImage(context: CGContext?, rect: CGRect) -> UIImage?
     {
         context!.interpolationQuality = CGInterpolationQuality.high
         context?.draw(image!, in: rect)
@@ -172,28 +172,28 @@ public extension UIImage
     {
         var point = CGPoint.zero
         
-        if alignment.contains(.Center)
+        if alignment.contains(.center)
         {
             point.x = (containerSize.width - imageSize.width)/2
             point.y = (containerSize.height - imageSize.height)/2
         }
         
-        if alignment.contains(.Top)
+        if alignment.contains(.top)
         {
             point.y = containerSize.height - imageSize.height
         }
         
-        if alignment.contains(.Bottom)
+        if alignment.contains(.bottom)
         {
             point.y =  0
         }
         
-        if alignment.contains(.Left)
+        if alignment.contains(.left)
         {
             point.x = 0
         }
         
-        if alignment.contains(.Right)
+        if alignment.contains(.right)
         {
             point.x = containerSize.width - imageSize.width
         }

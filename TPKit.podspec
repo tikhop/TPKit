@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "TPKit"
-  s.version          = "0.3.2"
-  s.summary          = "A collection of useful classes and categories."
+  s.version          = "1.0"
+  s.summary          = "A collection of useful shit"
 
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = <<-DESC
-                        A collection of useful classes and categories written in Swift.
+                        A collection of useful shit (for me at least) written in Swift.
                        DESC
 
   s.homepage         = "https://github.com/tikhop/TPKit"
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.author           = { "Pavel Tikhonenko" => "hi@tikhop.com" }
   s.source           = { :git => "https://github.com/tikhop/TPKit.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '8.2'
+  s.platform     = :ios, '10.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'

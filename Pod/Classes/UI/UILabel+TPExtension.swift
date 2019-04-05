@@ -17,6 +17,16 @@ extension UILabel
         label.textAlignment = .center
         label.font = font
         label.text = text
-        return UIImage.image(withLabel: label)
+        return UIImage.image(from: label)
+    }
+    
+    func imageSnapshot(bounds: CGRect? = nil) -> UIImage?
+    {
+        guard let r = bounds else
+        {
+            return UIImage.image(from: self)
+        }
+        
+        return UILabel.labelSnapshot(text: text ?? "", font: font, bounds: r)
     }
 }

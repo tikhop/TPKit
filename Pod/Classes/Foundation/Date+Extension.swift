@@ -10,7 +10,7 @@ import Foundation
 
 public extension Date
 {
-    public func isSame(to date: Date) -> Bool
+    func isSame(to date: Date) -> Bool
     {
         let calendar = Calendar.current
         
@@ -20,7 +20,7 @@ public extension Date
         return (comp1.day == comp2.day) && (comp1.month == comp2.month) && (comp1.year == comp2.year)
     }
     
-    public func isDateToday() -> Bool
+    func isDateToday() -> Bool
     {
         let otherDay = (Calendar.current as NSCalendar).components([.era, .year, .month, .day], from: self)
         let today = (Calendar.current as NSCalendar).components([.era, .year, .month, .day], from: Date())
@@ -32,12 +32,12 @@ public extension Date
         return isToday
     }
     
-    public func isDateWithinWeek() -> Bool
+    func isDateWithinWeek() -> Bool
     {
         return isDateWithinDaysBefore(7)
     }
     
-    public func isDateWithinDaysBefore(_ days: Int) -> Bool
+    func isDateWithinDaysBefore(_ days: Int) -> Bool
     {
         let now = Date()
         let calendar = Calendar.current
@@ -55,23 +55,26 @@ public extension Date
         return false
     }
     
-    public static func date(fromString string: String, dateFormat: String, timeZone: TimeZone = TimeZone.autoupdatingCurrent) -> Date?
+    func formatedString(dateFormat: String = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS'Z'", timeZone: TimeZone = TimeZone.autoupdatingCurrent) -> String?
     {
         let formatter = DateFormatter()
         formatter.dateFormat = dateFormat
         formatter.timeZone = timeZone
         
-        let date = formatter.date(from: string)
-        return date
+    
+        return formatter.string(from: self)
     }
-    
-    public static func formatedString(fromDate date: Date, dateFormat: String = "yyyy-MM-dd'T'HH:mm:ss.SSSSSSS'Z'", timeZone: TimeZone = TimeZone.autoupdatingCurrent) -> String?
+}
+
+public extension String
+{
+    func date(dateFormat: String, timeZone: TimeZone = TimeZone.autoupdatingCurrent) -> Date?
     {
         let formatter = DateFormatter()
         formatter.dateFormat = dateFormat
         formatter.timeZone = timeZone
         
-    
-        return formatter.string(from: date)
+        let date = formatter.date(from: self)
+        return date
     }
 }

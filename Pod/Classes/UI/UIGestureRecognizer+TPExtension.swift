@@ -15,10 +15,10 @@ extension UIGestureRecognizer: TPControlActionFunctionProtocol
 
 public extension TPControlActionFunctionProtocol where Self: UIGestureRecognizer
 {
-    public func addAction(_ action: @escaping (Self) -> Void)
+    func addAction(_ action: @escaping (Self) -> Void)
     {
         let trampoline = TPActionTrampoline(action: action)
-        self.addTarget(trampoline, action: "action:")
+        self.addTarget(trampoline, action: Selector(("action:")))
         objc_setAssociatedObject(self, UIControlActionFunctionProtocolAssociatedObjectKey, trampoline, .OBJC_ASSOCIATION_RETAIN)
     }
 }

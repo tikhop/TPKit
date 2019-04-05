@@ -7,32 +7,24 @@ import UIKit
 
 public  extension UIColor
 {
-    public class func imageFromColor(_ color:UIColor) -> UIImage
+    func image() -> UIImage
     {
-        return imageFromColor(color, width:1, height:1)
+        return image(width: 1, height: 1)
     }
     
-    public class func imageFromColor(_ color:UIColor, width:CGFloat, height:CGFloat) -> UIImage
+    func image(width:CGFloat, height:CGFloat) -> UIImage
     {
         let rect = CGRect(x: 0, y: 0, width: width, height: height)
         UIGraphicsBeginImageContext(rect.size)
         let context = UIGraphicsGetCurrentContext()
-        context?.setFillColor(color.cgColor)
+        context?.setFillColor(self.cgColor)
         context?.fill(rect)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image!
     }
 
-    public class func hexColor(_ color: Int32) -> UIColor
-    {
-        let r = CGFloat((color >> 16)&0xFF)/255.0
-        let g = CGFloat((color >> 8)&0xFF)/255.0
-        let b = CGFloat(color&0xFF)/255.0
-        return UIColor(red: r, green: g, blue: b, alpha: 1)
-    }
-    
-    public convenience init(red: Int, green: Int, blue: Int)
+    convenience init(red: Int, green: Int, blue: Int)
     {
         assert(red >= 0 && red <= 255, "Invalid red component")
         assert(green >= 0 && green <= 255, "Invalid green component")
@@ -41,7 +33,7 @@ public  extension UIColor
         self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
     }
     
-    public convenience init(hex:Int)
+    convenience init(hex:Int)
     {
         self.init(red:(hex >> 16) & 0xff, green:(hex >> 8) & 0xff, blue:hex & 0xff)
     }

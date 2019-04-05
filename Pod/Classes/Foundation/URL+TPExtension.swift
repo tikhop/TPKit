@@ -12,12 +12,12 @@ extension URL
 {
     public func debug()
     {
-        print("URL host:\(host)")
-        print("URL port:\(port)")
+        print("URL host:\(String(describing: host))")
+        print("URL port:\(String(describing: port))")
         print("URL path:\(path)")
-        print("URL fragment:\(fragment)")
+        print("URL fragment:\(String(describing: fragment))")
         print("URL parameterString:\(path)")
-        print("URL query:\(query)")
+        print("URL query:\(String(describing: query))")
         print("URL relativePath:\(relativePath)")
         
         print("URL Path components:")

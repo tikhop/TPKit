@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0046D0BD43C3D4D2E1EDB1CCBBAB55AF /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8055BF27AC7DBEE74FE1D4067CBBC40 /* UIColor+Extension.swift */; };
 		02B5A5DEB9469FA9A73ABDDC332DF2D8 /* Pods-TPKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF895639469DE806A84E5AA8B2B7C2B /* Pods-TPKit_Tests-dummy.m */; };
-		117FD071470DFCEAF30E106C3052342F /* NSData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF5A8686087543BA6FEBC976C8F47CD /* NSData+Extension.swift */; };
+		117FD071470DFCEAF30E106C3052342F /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF5A8686087543BA6FEBC976C8F47CD /* Data+Extension.swift */; };
 		224F535975337A072204CB1DABDED622 /* MFMailComposeViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0A91D686219A3957596A0FE49B5446 /* MFMailComposeViewController+Extensions.swift */; };
 		289A72E7D4FBD08981B8028779ABE5F3 /* TPKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B26C4E5DEEC2BFDE0D9F2CF86997D27 /* TPKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D64505EF4880760FC788635EAE67D15 /* Pods-TPKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C38D09514B994AD386D29F2E5C941F16 /* Pods-TPKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,12 +28,10 @@
 		47769AAE1C48790200F67233 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769AAC1C48790200F67233 /* UIDevice+Extension.swift */; };
 		47769AB01C4DC05A00F67233 /* UIApplication+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769AAF1C4DC05A00F67233 /* UIApplication+TPExtension.swift */; };
 		47769AB21C4DC1E400F67233 /* TPFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47769AB11C4DC1E400F67233 /* TPFoundation.swift */; };
-		47846E4B1C5B681B0084B3A4 /* NSBundle+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47846E4A1C5B681B0084B3A4 /* NSBundle+TPExtension.swift */; };
-		47B089B11C686B450011E8BB /* NSURL+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B089B01C686B450011E8BB /* NSURL+TPExtension.swift */; };
-		47B089B21C686C8F0011E8BB /* NSURL+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B089B01C686B450011E8BB /* NSURL+TPExtension.swift */; };
+		47B089B11C686B450011E8BB /* URL+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B089B01C686B450011E8BB /* URL+TPExtension.swift */; };
+		47B089B21C686C8F0011E8BB /* URL+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B089B01C686B450011E8BB /* URL+TPExtension.swift */; };
 		47B089B41C68EE8C0011E8BB /* String+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B089B31C68EE8C0011E8BB /* String+TPExtension.swift */; };
 		47B089FD1C78D2A20011E8BB /* TPKeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B089FC1C78D2A20011E8BB /* TPKeyboardHelper.swift */; };
-		47B08A171C7993690011E8BB /* UIViewController+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B08A161C7993690011E8BB /* UIViewController+TPExtension.swift */; };
 		5952F88B86FBE734DC0A9BB0589D9E5B /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA2AB5450C38702250A9EEF1C49F666 /* Array+Extension.swift */; };
 		7BB011D3EC59B8324496D9F42D21339E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA00F7186AE5DF4BAC5C38E9DC21294F /* Foundation.framework */; };
 		7FDB3FBFA0F9397FC50F326D3DEA0FDA /* Pods-TPKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0E0A769A5DF1B0FA0FCD2E434F3CC /* Pods-TPKit_Example-dummy.m */; };
@@ -41,8 +39,7 @@
 		9A95E02E401BA56E061E222EFD8B631F /* TPKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4ABE7596D48E062F2E9ED4F56FE0688 /* TPKit.bundle */; };
 		9B575B9555D7C2345BD450A76718E324 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11F071F1395ADE7654D3C863B9FFB87 /* UIImage+Extension.swift */; };
 		A1B47C8826494344A5B9F226B86792E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78820BA3B8EA7BC9508D2CA39793A95E /* UIKit.framework */; };
-		AB361DC00FB667D58F1C92937BECCF77 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C4937F00D8100C37C852074F0A021 /* NSDate+Extension.swift */; };
-		C4A508D99E845AD3A44831EC1E237486 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F5B00D61DB35034D6991247DCD6DC1 /* Optional+Extension.swift */; };
+		AB361DC00FB667D58F1C92937BECCF77 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C4937F00D8100C37C852074F0A021 /* Date+Extension.swift */; };
 		E273ABAFC60B1E619E99CD9EA2DD3916 /* TPBundleResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1180D5350F7444DDC55B77C80B8BA3A8 /* TPBundleResources.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,17 +86,14 @@
 		47769AAC1C48790200F67233 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "../Foundation/UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		47769AAF1C4DC05A00F67233 /* UIApplication+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+TPExtension.swift"; sourceTree = "<group>"; };
 		47769AB11C4DC1E400F67233 /* TPFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPFoundation.swift; sourceTree = "<group>"; };
-		47846E4A1C5B681B0084B3A4 /* NSBundle+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+TPExtension.swift"; sourceTree = "<group>"; };
-		47B089B01C686B450011E8BB /* NSURL+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURL+TPExtension.swift"; sourceTree = "<group>"; };
+		47B089B01C686B450011E8BB /* URL+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+TPExtension.swift"; sourceTree = "<group>"; };
 		47B089B31C68EE8C0011E8BB /* String+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+TPExtension.swift"; sourceTree = "<group>"; };
 		47B089FC1C78D2A20011E8BB /* TPKeyboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPKeyboardHelper.swift; sourceTree = "<group>"; };
-		47B08A161C7993690011E8BB /* UIViewController+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TPExtension.swift"; sourceTree = "<group>"; };
 		4EA0E0A769A5DF1B0FA0FCD2E434F3CC /* Pods-TPKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPKit_Example-dummy.m"; sourceTree = "<group>"; };
 		53D9ADB6DA88E03399C6302B7FB27079 /* Pods-TPKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		55E8F03E2D7AC52BD2878F22EA1BD91B /* Pods-TPKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TPKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		5AF5A8686087543BA6FEBC976C8F47CD /* NSData+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSData+Extension.swift"; sourceTree = "<group>"; };
+		5AF5A8686087543BA6FEBC976C8F47CD /* Data+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		5C7AE6EEF170FE8B2A4F79A6A6F53939 /* Pods-TPKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TPKit_Example.modulemap"; sourceTree = "<group>"; };
-		61F5B00D61DB35034D6991247DCD6DC1 /* Optional+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
 		78820BA3B8EA7BC9508D2CA39793A95E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		7CA2AB5450C38702250A9EEF1C49F666 /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		7E0A91D686219A3957596A0FE49B5446 /* MFMailComposeViewController+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "MFMailComposeViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -119,7 +113,7 @@
 		C895A3971B018000987EA9922F70E638 /* Pods-TPKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TPKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		D1523D56AE0DF5D5F55C5F12FAA127F3 /* Pods-TPKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D1686B88B312C93A4503179956DD3F26 /* Pods_TPKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TPKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC4C4937F00D8100C37C852074F0A021 /* NSDate+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		DC4C4937F00D8100C37C852074F0A021 /* Date+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		E667DBB4C694848028ACA46A53DDC627 /* Pods-TPKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		E8970C6B25ABB119E8467206648100D6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA00F7186AE5DF4BAC5C38E9DC21294F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -250,13 +244,11 @@
 			isa = PBXGroup;
 			children = (
 				7CA2AB5450C38702250A9EEF1C49F666 /* Array+Extension.swift */,
-				5AF5A8686087543BA6FEBC976C8F47CD /* NSData+Extension.swift */,
-				DC4C4937F00D8100C37C852074F0A021 /* NSDate+Extension.swift */,
-				61F5B00D61DB35034D6991247DCD6DC1 /* Optional+Extension.swift */,
+				5AF5A8686087543BA6FEBC976C8F47CD /* Data+Extension.swift */,
+				DC4C4937F00D8100C37C852074F0A021 /* Date+Extension.swift */,
 				47769AAF1C4DC05A00F67233 /* UIApplication+TPExtension.swift */,
 				47769AB11C4DC1E400F67233 /* TPFoundation.swift */,
-				47846E4A1C5B681B0084B3A4 /* NSBundle+TPExtension.swift */,
-				47B089B01C686B450011E8BB /* NSURL+TPExtension.swift */,
+				47B089B01C686B450011E8BB /* URL+TPExtension.swift */,
 				47B089B31C68EE8C0011E8BB /* String+TPExtension.swift */,
 			);
 			path = Foundation;
@@ -327,7 +319,6 @@
 				472790C11C5EA4A600AF2DF4 /* UIGestureRecognizer+TPExtension.swift */,
 				472790C31C5EA5DF00AF2DF4 /* TPUICommon.swift */,
 				47B089FC1C78D2A20011E8BB /* TPKeyboardHelper.swift */,
-				47B08A161C7993690011E8BB /* UIViewController+TPExtension.swift */,
 				475D81351D840655002F4C1A /* UITextField+TPExtension.swift */,
 				475D81381D8407D5002F4C1A /* UILabel+TPExtension.swift */,
 				475D813B1D840882002F4C1A /* UITextView+TPExtension.swift */,
@@ -444,7 +435,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1020;
 				TargetAttributes = {
 					43245DC3E9E5F47B7904C247174A3B50 = {
 						LastSwiftMigration = 0800;
@@ -462,7 +453,7 @@
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -503,14 +494,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47B089B11C686B450011E8BB /* NSURL+TPExtension.swift in Sources */,
+				47B089B11C686B450011E8BB /* URL+TPExtension.swift in Sources */,
 				5952F88B86FBE734DC0A9BB0589D9E5B /* Array+Extension.swift in Sources */,
 				224F535975337A072204CB1DABDED622 /* MFMailComposeViewController+Extensions.swift in Sources */,
-				117FD071470DFCEAF30E106C3052342F /* NSData+Extension.swift in Sources */,
+				117FD071470DFCEAF30E106C3052342F /* Data+Extension.swift in Sources */,
 				47769AAE1C48790200F67233 /* UIDevice+Extension.swift in Sources */,
-				47B08A171C7993690011E8BB /* UIViewController+TPExtension.swift in Sources */,
-				AB361DC00FB667D58F1C92937BECCF77 /* NSDate+Extension.swift in Sources */,
-				C4A508D99E845AD3A44831EC1E237486 /* Optional+Extension.swift in Sources */,
+				AB361DC00FB667D58F1C92937BECCF77 /* Date+Extension.swift in Sources */,
 				472790C41C5EA5DF00AF2DF4 /* TPUICommon.swift in Sources */,
 				E273ABAFC60B1E619E99CD9EA2DD3916 /* TPBundleResources.swift in Sources */,
 				475D813A1D8407D5002F4C1A /* UILabel+TPExtension.swift in Sources */,
@@ -518,7 +507,6 @@
 				47769AB21C4DC1E400F67233 /* TPFoundation.swift in Sources */,
 				47B089B41C68EE8C0011E8BB /* String+TPExtension.swift in Sources */,
 				0046D0BD43C3D4D2E1EDB1CCBBAB55AF /* UIColor+Extension.swift in Sources */,
-				47846E4B1C5B681B0084B3A4 /* NSBundle+TPExtension.swift in Sources */,
 				475D81371D840655002F4C1A /* UITextField+TPExtension.swift in Sources */,
 				475D813D1D840882002F4C1A /* UITextView+TPExtension.swift in Sources */,
 				47769AB01C4DC05A00F67233 /* UIApplication+TPExtension.swift in Sources */,
@@ -549,7 +537,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				475D81361D840655002F4C1A /* UITextField+TPExtension.swift in Sources */,
-				47B089B21C686C8F0011E8BB /* NSURL+TPExtension.swift in Sources */,
+				47B089B21C686C8F0011E8BB /* URL+TPExtension.swift in Sources */,
 				475D81391D8407D5002F4C1A /* UILabel+TPExtension.swift in Sources */,
 				475D813C1D840882002F4C1A /* UITextView+TPExtension.swift in Sources */,
 				7FDB3FBFA0F9397FC50F326D3DEA0FDA /* Pods-TPKit_Example-dummy.m in Sources */,
@@ -588,14 +576,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -611,9 +607,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -627,7 +624,7 @@
 				PRODUCT_NAME = TPKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -654,7 +651,7 @@
 				PRODUCT_NAME = TPKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -669,14 +666,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -698,9 +703,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
@@ -730,7 +736,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -761,7 +767,7 @@
 				PRODUCT_NAME = Pods_TPKit_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -791,7 +797,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -823,7 +829,7 @@
 				PRODUCT_NAME = Pods_TPKit_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -838,7 +844,7 @@
 				PRODUCT_NAME = TPKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -869,7 +875,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

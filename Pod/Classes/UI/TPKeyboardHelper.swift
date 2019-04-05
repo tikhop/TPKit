@@ -34,10 +34,10 @@ open class TPKeyboardHelper
     fileprivate func subscribeForKeyboardNotifications()
     {
         let center = NotificationCenter.default
-        center.addObserver(self, selector: #selector(TPKeyboardHelper.keyboardWillShowNotification(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        center.addObserver(self, selector: #selector(TPKeyboardHelper.keyboardDidShowNotification(_:)), name: NSNotification.Name.UIKeyboardDidShow, object: nil)
-        center.addObserver(self, selector: #selector(TPKeyboardHelper.keyboardWillHideNotification(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        center.addObserver(self, selector: #selector(TPKeyboardHelper.keyboardDidHideNotification(_:)), name: NSNotification.Name.UIKeyboardDidHide, object: nil)
+        center.addObserver(self, selector: #selector(TPKeyboardHelper.keyboardWillShowNotification(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        center.addObserver(self, selector: #selector(TPKeyboardHelper.keyboardDidShowNotification(_:)), name: UIResponder.keyboardDidShowNotification, object: nil)
+        center.addObserver(self, selector: #selector(TPKeyboardHelper.keyboardWillHideNotification(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        center.addObserver(self, selector: #selector(TPKeyboardHelper.keyboardDidHideNotification(_:)), name: UIResponder.keyboardDidHideNotification, object: nil)
     }
     
     fileprivate func notifyListeners(_ info: TPKeyboardInfo)
@@ -47,22 +47,22 @@ open class TPKeyboardHelper
         }
     }
     
-    fileprivate dynamic func keyboardWillShowNotification(_ notification: Notification)
+    @objc fileprivate dynamic func keyboardWillShowNotification(_ notification: Notification)
     {
         handleKeyboardNotification((notification as NSNotification).userInfo, state: .willShow)
     }
     
-    fileprivate dynamic func keyboardDidShowNotification(_ notification: Notification)
+    @objc fileprivate dynamic func keyboardDidShowNotification(_ notification: Notification)
     {
         handleKeyboardNotification((notification as NSNotification).userInfo, state: .visible)
     }
     
-    fileprivate dynamic func keyboardWillHideNotification(_ notification: Notification)
+    @objc fileprivate dynamic func keyboardWillHideNotification(_ notification: Notification)
     {
         handleKeyboardNotification((notification as NSNotification).userInfo, state: .willHide)
     }
     
-    fileprivate dynamic func keyboardDidHideNotification(_ notification: Notification)
+    @objc fileprivate dynamic func keyboardDidHideNotification(_ notification: Notification)
     {
         handleKeyboardNotification((notification as NSNotification).userInfo, state: .hidden)
     }
@@ -94,7 +94,7 @@ public struct TPKeyboardInfo
     public let beginFrame: CGRect
     public let endFrame: CGRect
     
-    public let animationCurve: UIViewAnimationCurve
+    public let animationCurve: UIView.AnimationCurve
     public let animationDuration: TimeInterval
     
     public let state: TPKeyboardState
@@ -102,13 +102,13 @@ public struct TPKeyboardInfo
     public static func fromNotificationUserInfo(_ info: [AnyHashable: Any]?, state: TPKeyboardState) -> TPKeyboardInfo
     {
         var beginFrame = CGRect.zero
-        (info?[UIKeyboardFrameBeginUserInfoKey] as AnyObject).getValue(&beginFrame)
+        (info?[UIResponder.keyboardFrameBeginUserInfoKey] as AnyObject).getValue(&beginFrame)
         
         var endFrame = CGRect.zero
-        (info?[UIKeyboardFrameEndUserInfoKey] as AnyObject).getValue(&endFrame)
+        (info?[UIResponder.keyboardFrameEndUserInfoKey] as AnyObject).getValue(&endFrame)
         
-        let curve = UIViewAnimationCurve(rawValue: info?[UIKeyboardAnimationCurveUserInfoKey] as? Int ?? 0) ?? .easeInOut
-        let duration = TimeInterval(info?[UIKeyboardAnimationDurationUserInfoKey] as? Double ?? 0.0)
+        let curve = UIView.AnimationCurve(rawValue: info?[UIResponder.keyboardAnimationCurveUserInfoKey] as? Int ?? 0) ?? .easeInOut
+        let duration = TimeInterval(info?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double ?? 0.0)
         
         return TPKeyboardInfo(beginFrame: beginFrame, endFrame: endFrame, animationCurve: curve, animationDuration: duration, state: state)
     }
@@ -116,7 +116,7 @@ public struct TPKeyboardInfo
 
 public extension TPKeyboardInfo
 {
-    public var height: CGFloat
+    var height: CGFloat
         {
             if state == .willShow || state == .visible
             {
@@ -126,14 +126,14 @@ public extension TPKeyboardInfo
             return 0
     }
     
-    public var animationOptions: UIViewAnimationOptions
+    var animationOptions: UIView.AnimationOptions
         {
             switch animationCurve
             {
-            case .easeInOut: return UIViewAnimationOptions()
-            case .easeIn: return UIViewAnimationOptions.curveEaseIn
-            case .easeOut: return UIViewAnimationOptions.curveEaseOut
-            case .linear: return UIViewAnimationOptions.curveLinear
+            case .easeInOut: return UIView.AnimationOptions()
+            case .easeIn: return UIView.AnimationOptions.curveEaseIn
+            case .easeOut: return UIView.AnimationOptions.curveEaseOut
+            case .linear: return UIView.AnimationOptions.curveLinear
             }
     }
 }
