@@ -7,7 +7,7 @@ import Foundation
 
 public extension Optional
 {
-    public func unwrapWithBlock(_ block: ((_ some: Wrapped) -> ()))
+    func unwrapWithBlock(_ block: ((_ some: Wrapped) -> ()))
     {
         switch self
         {

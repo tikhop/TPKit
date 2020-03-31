@@ -46,9 +46,9 @@
 		47E7E71D2433B0D300F2C175 /* UITextView+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E6E22433B0D300F2C175 /* UITextView+TPExtension.swift */; };
 		47E7E71E2433B0D300F2C175 /* UITextView+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E6E22433B0D300F2C175 /* UITextView+TPExtension.swift */; };
 		47E7E71F2433B0D300F2C175 /* UITextView+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E6E22433B0D300F2C175 /* UITextView+TPExtension.swift */; };
-		47E7E7502433B17E00F2C175 /* URL+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E7472433B17D00F2C175 /* URL+TPExtension.swift */; };
-		47E7E7512433B17E00F2C175 /* URL+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E7472433B17D00F2C175 /* URL+TPExtension.swift */; };
-		47E7E7522433B17E00F2C175 /* URL+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E7472433B17D00F2C175 /* URL+TPExtension.swift */; };
+		47E7E7502433B17E00F2C175 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E7472433B17D00F2C175 /* URL+Extension.swift */; };
+		47E7E7512433B17E00F2C175 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E7472433B17D00F2C175 /* URL+Extension.swift */; };
+		47E7E7522433B17E00F2C175 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E7472433B17D00F2C175 /* URL+Extension.swift */; };
 		47E7E7532433B17E00F2C175 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E7482433B17D00F2C175 /* Data+Extension.swift */; };
 		47E7E7542433B17E00F2C175 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E7482433B17D00F2C175 /* Data+Extension.swift */; };
 		47E7E7552433B17E00F2C175 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E7482433B17D00F2C175 /* Data+Extension.swift */; };
@@ -67,9 +67,6 @@
 		47E7E7622433B17E00F2C175 /* UIApplication+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E74D2433B17E00F2C175 /* UIApplication+TPExtension.swift */; };
 		47E7E7632433B17E00F2C175 /* UIApplication+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E74D2433B17E00F2C175 /* UIApplication+TPExtension.swift */; };
 		47E7E7642433B17E00F2C175 /* UIApplication+TPExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E74D2433B17E00F2C175 /* UIApplication+TPExtension.swift */; };
-		47E7E7652433B17E00F2C175 /* TPFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E74E2433B17E00F2C175 /* TPFoundation.swift */; };
-		47E7E7662433B17E00F2C175 /* TPFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E74E2433B17E00F2C175 /* TPFoundation.swift */; };
-		47E7E7672433B17E00F2C175 /* TPFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E74E2433B17E00F2C175 /* TPFoundation.swift */; };
 		47E7E7682433B17E00F2C175 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E74F2433B17E00F2C175 /* Array+Extension.swift */; };
 		47E7E7692433B17E00F2C175 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E74F2433B17E00F2C175 /* Array+Extension.swift */; };
 		47E7E76A2433B17E00F2C175 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7E74F2433B17E00F2C175 /* Array+Extension.swift */; };
@@ -124,14 +121,13 @@
 		47E7E6E02433B0D300F2C175 /* UIGestureRecognizer+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+TPExtension.swift"; sourceTree = "<group>"; };
 		47E7E6E12433B0D300F2C175 /* TPUICommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPUICommon.swift; sourceTree = "<group>"; };
 		47E7E6E22433B0D300F2C175 /* UITextView+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+TPExtension.swift"; sourceTree = "<group>"; };
-		47E7E7472433B17D00F2C175 /* URL+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+TPExtension.swift"; sourceTree = "<group>"; };
+		47E7E7472433B17D00F2C175 /* URL+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		47E7E7482433B17D00F2C175 /* Data+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
 		47E7E7492433B17D00F2C175 /* Optional+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
 		47E7E74A2433B17E00F2C175 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		47E7E74B2433B17E00F2C175 /* String+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+TPExtension.swift"; sourceTree = "<group>"; };
 		47E7E74C2433B17E00F2C175 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 		47E7E74D2433B17E00F2C175 /* UIApplication+TPExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+TPExtension.swift"; sourceTree = "<group>"; };
-		47E7E74E2433B17E00F2C175 /* TPFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPFoundation.swift; sourceTree = "<group>"; };
 		47E7E74F2433B17E00F2C175 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		47E7E76B2433B1E700F2C175 /* TPKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TPKit.podspec; path = ../../TPKit.podspec; sourceTree = "<group>"; };
 		4EA0E0A769A5DF1B0FA0FCD2E434F3CC /* Pods-TPKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPKit_Example-dummy.m"; sourceTree = "<group>"; };
@@ -249,10 +245,7 @@
 				47E7E74A2433B17E00F2C175 /* Date+Extension.swift */,
 				47E7E7492433B17D00F2C175 /* Optional+Extension.swift */,
 				47E7E74B2433B17E00F2C175 /* String+TPExtension.swift */,
-				47E7E74E2433B17E00F2C175 /* TPFoundation.swift */,
-				47E7E74D2433B17E00F2C175 /* UIApplication+TPExtension.swift */,
-				47E7E74C2433B17E00F2C175 /* UIDevice+Extension.swift */,
-				47E7E7472433B17D00F2C175 /* URL+TPExtension.swift */,
+				47E7E7472433B17D00F2C175 /* URL+Extension.swift */,
 			);
 			name = Foundation;
 			sourceTree = "<group>";
@@ -271,6 +264,8 @@
 				47E7E6CE2433B0D300F2C175 /* UIColor+Extension.swift */,
 				47E7E6CF2433B0D300F2C175 /* UIImage+Extension.swift */,
 				47E7E6D02433B0D300F2C175 /* TPKeyboardHelper.swift */,
+				47E7E74D2433B17E00F2C175 /* UIApplication+TPExtension.swift */,
+				47E7E74C2433B17E00F2C175 /* UIDevice+Extension.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -548,7 +543,6 @@
 				47E7E7582433B17E00F2C175 /* Optional+Extension.swift in Sources */,
 				47E7E75E2433B17E00F2C175 /* String+TPExtension.swift in Sources */,
 				47E7E6E82433B0D300F2C175 /* UIColor+Extension.swift in Sources */,
-				47E7E7672433B17E00F2C175 /* TPFoundation.swift in Sources */,
 				47E7E70D2433B0D300F2C175 /* MFMailComposeViewController+Extensions.swift in Sources */,
 				47E7E7192433B0D300F2C175 /* UIGestureRecognizer+TPExtension.swift in Sources */,
 				47E7E6EB2433B0D300F2C175 /* UIImage+Extension.swift in Sources */,
@@ -561,7 +555,7 @@
 				47E7E7102433B0D300F2C175 /* UILabel+TPExtension.swift in Sources */,
 				47E7E7612433B17E00F2C175 /* UIDevice+Extension.swift in Sources */,
 				47E7E7552433B17E00F2C175 /* Data+Extension.swift in Sources */,
-				47E7E7522433B17E00F2C175 /* URL+TPExtension.swift in Sources */,
+				47E7E7522433B17E00F2C175 /* URL+Extension.swift in Sources */,
 				47E7E71F2433B0D300F2C175 /* UITextView+TPExtension.swift in Sources */,
 				47E7E7162433B0D300F2C175 /* TPBundleResources.swift in Sources */,
 				47E7E6EE2433B0D300F2C175 /* TPKeyboardHelper.swift in Sources */,
@@ -584,11 +578,10 @@
 				47E7E7572433B17E00F2C175 /* Optional+Extension.swift in Sources */,
 				47E7E6E72433B0D300F2C175 /* UIColor+Extension.swift in Sources */,
 				02B5A5DEB9469FA9A73ABDDC332DF2D8 /* Pods-TPKit_Tests-dummy.m in Sources */,
-				47E7E7662433B17E00F2C175 /* TPFoundation.swift in Sources */,
 				47E7E7182433B0D300F2C175 /* UIGestureRecognizer+TPExtension.swift in Sources */,
 				47E7E6E42433B0D300F2C175 /* UIControl+TPExtension.swift in Sources */,
 				47E7E7122433B0D300F2C175 /* UITextField+TPExtension.swift in Sources */,
-				47E7E7512433B17E00F2C175 /* URL+TPExtension.swift in Sources */,
+				47E7E7512433B17E00F2C175 /* URL+Extension.swift in Sources */,
 				47E7E7542433B17E00F2C175 /* Data+Extension.swift in Sources */,
 				47E7E70C2433B0D300F2C175 /* MFMailComposeViewController+Extensions.swift in Sources */,
 				47E7E75D2433B17E00F2C175 /* String+TPExtension.swift in Sources */,
@@ -608,7 +601,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				47E7E70B2433B0D300F2C175 /* MFMailComposeViewController+Extensions.swift in Sources */,
-				47E7E7652433B17E00F2C175 /* TPFoundation.swift in Sources */,
 				47E7E75F2433B17E00F2C175 /* UIDevice+Extension.swift in Sources */,
 				47E7E6E62433B0D300F2C175 /* UIColor+Extension.swift in Sources */,
 				47E7E6EC2433B0D300F2C175 /* TPKeyboardHelper.swift in Sources */,
@@ -620,7 +612,7 @@
 				47E7E7592433B17E00F2C175 /* Date+Extension.swift in Sources */,
 				47E7E6E92433B0D300F2C175 /* UIImage+Extension.swift in Sources */,
 				47E7E75C2433B17E00F2C175 /* String+TPExtension.swift in Sources */,
-				47E7E7502433B17E00F2C175 /* URL+TPExtension.swift in Sources */,
+				47E7E7502433B17E00F2C175 /* URL+Extension.swift in Sources */,
 				47E7E7172433B0D300F2C175 /* UIGestureRecognizer+TPExtension.swift in Sources */,
 				47E7E7112433B0D300F2C175 /* UITextField+TPExtension.swift in Sources */,
 				47E7E7622433B17E00F2C175 /* UIApplication+TPExtension.swift in Sources */,

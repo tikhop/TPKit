@@ -2,7 +2,7 @@
 //  Copyright © 2016 Pavel Tikhonenko. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public extension UIDevice
 {

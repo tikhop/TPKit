@@ -14,18 +14,7 @@ public extension String
     {
         return addingPercentEncoding(withAllowedCharacters: CharacterSet.urlHostAllowed)!
     }
-    
-    func replaceMatches(_ pattern: String, withString replacementString: String, ignoreCase: Bool = false) -> String?
-    {
-        if let regex = TPFoundation.regex(pattern, ignoreCase: ignoreCase)
-        {
-            let range = NSMakeRange(0, count)
-            return regex.stringByReplacingMatches(in: self, options: [.anchored], range: range, withTemplate: replacementString)
-        }
         
-        return nil
-    }
-    
     func validAsEmail() -> Bool
     {
         let emailRegEx = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
