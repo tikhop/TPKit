@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TPKit"
-  s.version          = "1.0"
+  s.version          = "1.0.1"
   s.summary          = "A collection of useful shit"
 
 
@@ -30,6 +30,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
+  s.swift_version = "5.0"
 
   s.frameworks = 'UIKit' #, 'MapKit'
 end
