@@ -4,6 +4,8 @@
 //  Created by PurposeLab on 20/07/2014.
 //
 
+import UIKit
+
 var kMainStoryboardName: String {
     let info = Bundle.main.infoDictionary!
     
